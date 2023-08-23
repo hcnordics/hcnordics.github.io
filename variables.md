@@ -1,6 +1,7 @@
 ---
 title: "Variables"
 permalink: /variables/
+cover: odense_k.png
 ---
 
 Kl: Grade lists  

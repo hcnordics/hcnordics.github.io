@@ -1,5 +1,5 @@
 ---
 title: "Sources"
 layout: directory
-cover: biographies.jpg
+cover: biografier.png
 ---

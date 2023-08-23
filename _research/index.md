@@ -1,5 +1,5 @@
 ---
 title: "Research"
 layout: directory
-cover: gradelists.jpg
+cover: karakter.jpg
 ---

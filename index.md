@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 layout: directory
-cover: front.jpg
+cover: jessensskole.png
 ---
 
 ---
