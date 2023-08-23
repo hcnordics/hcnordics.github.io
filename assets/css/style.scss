@@ -168,15 +168,15 @@ header, footer {
   border: 0px;
   width: 300px;
   box-sizing: border-box;
-  margin: 30px;
+  margin: 0px 30px;
 }
 header {
   background: radial-gradient(circle at top left, var(--dark) 0%, var(--secondary) 60%, var(--primary) 100%);
   color: var(--white);
   box-shadow: -4px 5px 3px -3px #00000033 inset;
-  padding: 30px 30px 30px 50px;
-  min-height: 40vh;
-  border-radius: var(--border-curve);
+  padding: 60px 30px 30px 50px;
+  min-height: calc(40vh + 30px);
+  border-radius: 0px 0px var(--border-curve) var(--border-curve);
 }
 
 header ul {
