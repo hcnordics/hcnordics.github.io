@@ -27,7 +27,6 @@ layout: default
 ## Detailed content list
 
 ---
-> Work in progress!
 
 | Country | Years (incl.) | Source/s (see below) | Grades: HS subject grades | Grades: HS final grade | Grades: Uni subject grades | Grades: Uni final grade |
 |---|---|---|---|---|---|---|
