@@ -2,6 +2,7 @@
 title: "Overview"
 layout: directory
 cover: jessensskole.png
+linkto: about
 ---
 
 ---
