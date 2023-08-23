@@ -39,7 +39,7 @@ layout: default
       {% assign articleslist = site.research %}
       <ul>
         {% for item in articleslist %}
-          {% unless item.slug == "index" | item.status == "completed" %}
+          {% unless item.slug == "index" or item.status == "completed" %}
             <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
           {% endunless %}
         {% endfor %}
