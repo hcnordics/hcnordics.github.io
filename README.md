@@ -1,5 +1,5 @@
 # Human Capital in the Nordic Countries
-This GitHub repository hosts files for the project website, and is intended for use only by project team members. The project website can be found at: https://nickforddk.github.io/OpenHCNC/
+This GitHub repository hosts files for the project website, and is intended for use only by project team members. The project website can be found at: https://hcnordics.github.io/
 
 # Editing the website
 The website is constructed with GitHub pages using files written in Markdown (.md). Markdown is simple, providing a minimal amount of formatting using a text-based editor.
@@ -24,7 +24,7 @@ Any changes you make to the site will not appear immediately. Rather, edits requ
 ### The instruction block
 Each Markdown (.md) file includes basic instructions to generate the page. At a minimum, this includes the page _title_ and _layout_ (usually "default"). Other prompts that can be included in the instruction block are:
 - _subtitle_: An extension of the page title. Particularly relevant for articles.
-- _status_: An optional one-word descriptor for articles. Useful for noting that a paper is ["Completed"](https://nickforddk.github.io/OpenHCNC/articles/rivista).
+- _status_: An optional one-word descriptor for articles. Useful for noting that a paper is ["Completed"](https://hcnordics.github.io/articles/rivista).
 - _cover_: Allows a cover image for the page title. Images must be saved in the assets/images directory. Contact Nick if there's a specific image you want to include!
 - _members_: Lists the project team members that are assigned to the relevant item (eg. an article). Individuals are identified by surname (or a username), separated by commas and included in square brackets (see below).  
 
@@ -105,7 +105,7 @@ Project team members are coded into the configuration file for the website (`_co
 ```
 (Note the dash before surname: this marks the start of an individual's entry.)
 
-At this stage, _role_ is not actively used on the website. All other values are used to populate the team member profile boxes that appear on the site -- for example, on the [About HCNC](https://nickforddk.github.io/OpenHCNC/about) page. As noted above, _surname_ is the value used to identify team members where individuals are assigned to pages using the _members_ option in the instruction block. For cases where a surname is shared by multiple individuals, a _username_ field can also be included: just add an extra line below _firstname_ with `username: "NAME HERE"`. To avoid confusion, usernames should be entirely lower case (eg. "ford_n").
+At this stage, _role_ is not actively used on the website. All other values are used to populate the team member profile boxes that appear on the site -- for example, on the [About HCNC](https://hcnordics.github.io/about/) page. As noted above, _surname_ is the value used to identify team members where individuals are assigned to pages using the _members_ option in the instruction block. For cases where a surname is shared by multiple individuals, a _username_ field can also be included: just add an extra line below _firstname_ with `username: "NAME HERE"`. To avoid confusion, usernames should be entirely lower case (eg. "ford_n").
 
 You are welcome to edit your own profile information, but otherwise avoid editing the configuration file, as this may "break" the website!
 
