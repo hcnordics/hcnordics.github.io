@@ -277,10 +277,11 @@ section {
   line-height: 1.8em;
   max-width: 750px;
   min-height: 100%;
-  width: 100%;
+  width: auto;
   margin: 0px auto;
   float: none;
   padding: 30px 100px 30px 400px;
+  flex-grow: 2;
 }
 
 section p + ul, section p + ol {
