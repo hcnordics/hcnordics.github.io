@@ -41,7 +41,7 @@ body {
   padding: 0px;
   min-height: 100vh;
 }
-body, header, section, footer {
+body, header, footer {
   box-sizing: border-box;
 }
 
@@ -277,8 +277,8 @@ section {
   line-height: 1.8em;
   max-width: 750px;
   min-height: 100%;
-  width: auto;
-  margin: auto;
+  width: 100%;
+  margin: 0px auto;
   float: none;
   padding: 30px 100px 30px 400px;
 }
@@ -348,6 +348,7 @@ small {
   margin: 0px;
   width: 100%;
   min-height: 100vh;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -537,6 +538,7 @@ ul.bio li.github a {
   }
   section {
     padding: 50px 20px;
+    box-sizing: border-box;
   }
   h1.cover {
     height: 20vh;
