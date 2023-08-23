@@ -52,6 +52,7 @@ layout: default
             <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
           {% else %}
             <li>No projects completed yet!</li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
