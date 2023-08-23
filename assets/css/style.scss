@@ -146,6 +146,8 @@ h1.cover {
   display: flex;
 }
 h1.cover::before {
+  content: "";
+  display: block;
   position: absolute;
   top: 0px;
   left: 0px;
