@@ -43,21 +43,23 @@ layout: default
         {% if item.slug == "index" %}
         {% else %}
 
-        {% unless status == "completed" %}
-        <ul>
-          {% for item in articleslist %}
-            <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
-          {% endfor %}
-        </ul>
-        {% endunless %}
+          {% unless status == "completed" %}
+          <ul>
+            {% for item in articleslist %}
+              <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
+            {% endfor %}
+          </ul>
+          {% endunless %}
 
-        {% if status == "completed" %}
-        <h3>Completed work</h3>
-        <ul>
-          {% for item in articleslist %}
-            <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
-          {% endfor %}
-        </ul>
+          {% if status == "completed" %}
+          <h3>Completed work</h3>
+          <ul>
+            {% for item in articleslist %}
+              <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          
         {% endif %}
     </div>
 
