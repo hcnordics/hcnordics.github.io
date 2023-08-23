@@ -11,7 +11,7 @@ This brief guide to editing the website discusses:
 
 ## Folders and files
 The website's content is located in the main `OpenHCNC` folder (where you are now), and the folders:
-- `_articles` (containing the pages in the _Articles_ category)
+- `_research` (containing the pages in the _Research_ category)
 - `_sources` (containing the pages in the _Sources_ category)  
 
 The other folders contain the nuts and bolts of the site and its design. Please only edit files in the folders listed above! 😊
@@ -23,10 +23,10 @@ Any changes you make to the site will not appear immediately. Rather, edits requ
 
 ### The instruction block
 Each Markdown (.md) file includes basic instructions to generate the page. At a minimum, this includes the page _title_ and _layout_ (usually "default"). Other prompts that can be included in the instruction block are:
-- _subtitle_: An extension of the page title. Particularly relevant for articles.
-- _status_: An optional one-word descriptor for articles. Useful for noting that a paper is ["Completed"](https://hcnordics.github.io/articles/rivista).
+- _subtitle_: An extension of the page title. Particularly relevant for research items.
+- _status_: An optional one-word descriptor for research items. Useful for noting that a paper is ["Completed"](https://hcnordics.github.io/research/rivista).
 - _cover_: Allows a cover image for the page title. Images must be saved in the assets/images directory. Contact Nick if there's a specific image you want to include!
-- _members_: Lists the project team members that are assigned to the relevant item (eg. an article). Individuals are identified by surname (or a username), separated by commas and included in square brackets (see below).  
+- _members_: Lists the project team members that are assigned to the relevant item (eg. a research item). Individuals are identified by surname (or a username), separated by commas and included in square brackets (see below).  
 
 Only include those items that you need for the page. In most cases _title: "INSERT TITLE HERE"_ and _layout: default_ will be sufficient.
 
@@ -110,4 +110,4 @@ At this stage, _role_ is not actively used on the website. All other values are 
 You are welcome to edit your own profile information, but otherwise avoid editing the configuration file, as this may "break" the website!
 
 # About the site
-This GitHub Pages site is managed by [Nick Ford](https://github.com/nickforddk), using a heavily edited version of the Jekyll template, _Dinky_. The typeface is the open source variable font [Archivo](https://fonts.google.com/specimen/Archivo).
+This GitHub Pages site was set up by [Nick Ford](https://github.com/nickforddk), using a heavily edited version of the Jekyll template, _Dinky_. The typeface is the open source variable font [Archivo](https://fonts.google.com/specimen/Archivo).
