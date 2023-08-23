@@ -232,13 +232,11 @@ p.header {
 
 footer {
   color: var(--dark-alt);
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+  position: relative;
   margin: 0px;
   padding: 0px;
   font-size: var(--font-size--tiny);
-  width: auto;
+  width: 100%;
 }
 footer ul {
   list-style: none;
@@ -505,7 +503,7 @@ ul.bio li.github a {
 }
 
 @media print, screen and (max-width: 720px) {
-  header, footer {
+  header {
     width: auto;
     margin: 0px;
     padding: 20px;
