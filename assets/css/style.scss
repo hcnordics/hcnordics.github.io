@@ -39,6 +39,7 @@ body {
   font-size: var(--font-size--normal);
   line-height: initial;
   padding: 0px;
+  min-height: 100vh;
 }
 
 body, h1, h1.header, h2, h3, h4, h5, h6, th {
@@ -231,14 +232,16 @@ p.header {
 
 footer {
   color: var(--dark-alt);
-  position: relative;
-  margin-top: -30px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
   font-size: var(--font-size--tiny);
-  padding: 0px 30px;
 }
 footer ul {
   list-style: none;
-  padding: 0px;
+  padding: 0px 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 100px);
   grid-gap: 10px;
@@ -249,7 +252,8 @@ footer ul li {
   flex: auto;
   margin: 0px;
 }
-footer + div {
+footer::after {
+  content: "";
   display: block;
   height: 50px;
   background: linear-gradient(to bottom, #00000033 0%, #00000000 10%, #FFFFFF44 100%),radial-gradient(ellipse at top, var(--primary) 0%, var(--dark) 100%);
@@ -468,13 +472,13 @@ ul.bio li.github a {
 }
   
 @media print, screen and (max-width: 960px) {
-  header, footer {
+  header {
     width: auto;
     margin: 0px;
     border-radius: 0px;
     padding: 20px 50px;
   }
-  footer + div {
+  footer::after {
     height: 30px;
     margin: 0px;
   }
