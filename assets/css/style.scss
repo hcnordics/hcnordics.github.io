@@ -240,6 +240,8 @@ footer {
   position: relative;
   display: flex;
   flex-flow: column;
+  justify-content: flex-end;
+  align-items: stretch;
   align-self: end;
   gap: 0px;
   left: 0px;
