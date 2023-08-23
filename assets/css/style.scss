@@ -41,7 +41,7 @@ body {
   padding: 0px;
   min-height: 100vh;
 }
-body, header, footer {
+body, header, section, footer {
   box-sizing: border-box;
 }
 
@@ -275,12 +275,12 @@ footer::after {
 
 section {
   line-height: 1.8em;
-  max-width: 750px;
+  max-width: 1200px;
   min-height: 100%;
-  width: auto;
+  width: 100%;
   margin: 0px auto;
   float: none;
-  padding: 30px 100px 30px 400px;
+  padding: 30px 50px 30px 380px;
   flex-grow: 2;
 }
 
@@ -350,7 +350,7 @@ small {
   width: 100%;
   min-height: 100vh;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
 }
 
 .strap {
@@ -511,6 +511,7 @@ ul.bio li.github a {
     top: 40px;
   }
   section {
+    max-width: 850px;
     padding: 50px;
     min-height: 100%;
   }
@@ -559,6 +560,7 @@ ul.bio li.github a {
 
 @media print, screen and (min-width: 1600px) {
   section {
-    padding: 30px 400px;
+    max-width: 850px;
+    padding: 30px 50px;
   }
 }
