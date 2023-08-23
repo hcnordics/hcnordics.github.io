@@ -75,14 +75,14 @@ Website links and images can also be included:
 
 We also use tables on the HCNC website, particularly to provide an overview of our source material. Tables are the most complicated piece of Markdown coding: essentially, you have to draw the table using text notation. Each row is a new line of text, each column is separated by a vertical pipe (|), while the table header is separated by dashes (---). An example of a table is:
 ```
-| Navn | By | Dato | Arbejd | 
+| Navn | By | Dato | Arbejde | 
 | --- | --- | --- | --- |
 | Jens | Hillerød | 23-06 | Kok |
 | Hans | Aalborg | 10-07 | Gartner |
 ```
 When the page is generated, you then get:
 
-| Navn | By | Dato | Arbejd | 
+| Navn | By | Dato | Arbejde | 
 | --- | --- | --- | --- |
 | Jens | Hillerød | 23-06 | Kok |
 | Hans | Aalborg | 10-07 | Gartner |
