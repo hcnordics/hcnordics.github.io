@@ -167,7 +167,6 @@ h1.header::after, h1.cover::after {
 
 header, footer {
   border: 0px;
-  width: 300px;
   box-sizing: border-box;
   margin: 0px 30px;
 }
@@ -177,6 +176,7 @@ header {
   box-shadow: -4px 5px 3px -3px #00000033 inset;
   padding: 60px 30px 30px 30px;
   min-height: calc(40vh + 30px);
+  width: 300px;
   border-radius: 0px 0px var(--border-curve) var(--border-curve);
 }
 
@@ -238,6 +238,7 @@ footer {
   margin: 0px;
   padding: 0px;
   font-size: var(--font-size--tiny);
+  width: auto;
 }
 footer ul {
   list-style: none;
