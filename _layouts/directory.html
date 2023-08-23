@@ -47,12 +47,10 @@ layout: default
 
       <h3>Completed work</h3>
       <ul>
-        {% for item in articleslist %}
-          {% if item.status == "completed" %}
-            <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
-          {% else %}
-            <li>No projects completed yet!</li>
-          {% endif %}
+        {% for item in articleslist if item.status == "completed" %}
+          <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
+        {% else %}
+          <li>No projects completed yet!</li>
         {% endfor %}
       </ul>
     </div>
