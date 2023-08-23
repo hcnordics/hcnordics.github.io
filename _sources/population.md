@@ -1,6 +1,7 @@
 ---
 title: Censuses and related population sources
 layout: default
+cover: soroedrengene.png
 ---
 
 ## Census records
