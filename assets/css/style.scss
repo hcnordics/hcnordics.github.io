@@ -174,7 +174,7 @@ header {
   background: radial-gradient(circle at top left, var(--dark) 0%, var(--secondary) 60%, var(--primary) 100%);
   color: var(--white);
   box-shadow: -4px 5px 3px -3px #00000033 inset;
-  padding: 60px 30px 30px 50px;
+  padding: 60px 30px 30px 30px;
   min-height: calc(40vh + 30px);
   border-radius: 0px 0px var(--border-curve) var(--border-curve);
 }
@@ -471,8 +471,6 @@ ul.bio li.github a {
     width: auto;
     margin: 0px;
     border-radius: 0px;
-  }
-  footer {
     padding: 20px 50px;
   }
   footer + div {
@@ -481,7 +479,7 @@ ul.bio li.github a {
   }
   header {
     box-shadow: 0px -4px 3px -3px #00000033 inset;
-    min-height: 180px;
+    min-height: unset;
   }
   header ul {
     right: 50px;
