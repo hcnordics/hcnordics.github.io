@@ -10,7 +10,7 @@ This brief guide to editing the website discusses:
 1. where details of [team members](#listing-team-members) are saved
 
 ## Folders and files
-The website's content is located in the main `OpenHCNC` folder (where you are now), and the folders:
+The website's content is located in the main directory (where you are now), and the folders:
 - `_research` (containing the pages in the _Research_ category)
 - `_sources` (containing the pages in the _Sources_ category)  
 
