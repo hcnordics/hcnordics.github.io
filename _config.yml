@@ -9,10 +9,10 @@ show_downloads: false
 permalink: /:slug
 
 collections:
-  articles:
+  research:
     output: true
     layout: default
-    permalink: /articles/:name
+    permalink: /research/:name
   sources:
     output: true
     layout: default
