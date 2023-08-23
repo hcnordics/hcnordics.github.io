@@ -101,19 +101,17 @@
           </ul>
         {% endif %}
       </section>
-      
+      <footer>
+        <ul>
+          <li>Developed by <a href="https://www.nickford.com/">Nick Ford</a></li>
+        {% if site.github.is_project_page %}
+          <li>Maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></li>
+        {% endif %}
+          <li>Hosted on <a href="https://pages.github.com">GitHub Pages</a></li>
+        </ul>
+      </footer>
     </div>
     
-    <footer>
-      <ul>
-        <li>Developed by <a href="https://www.nickford.com/">Nick Ford</a></li>
-      {% if site.github.is_project_page %}
-        <li>Maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></li>
-      {% endif %}
-        <li>Hosted on <a href="https://pages.github.com">GitHub Pages</a></li>
-      </ul>
-    </footer>
-
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
   </body>
 </html>
