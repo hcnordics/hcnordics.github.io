@@ -266,7 +266,7 @@ section {
   flex-grow: 2;
 }
 
-section p + ul, section p + ol {
+section p + ul:not(.projects, .bio), section p + ol {
   margin-top: -20px;
 }
 section p em {
@@ -468,6 +468,34 @@ thead, tbody, tfoot {
   white-space: normal;
   border-radius: var(--border-curve);
 }
+
+ul.projects {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 10px;
+}
+ul.projects > li {
+  padding: 0px;
+  margin: 0px;
+}
+ul.projects > li > a {
+  background: var(--light);
+  color: var(--secondary);
+  text-decoration: none;
+  padding: calc(6px + var(--border-width));
+  border-radius: var(--border-curve);
+  font-variation-settings: 'wdth' 75;
+  text-transform: capitalize;
+}
+ul.projects > li > :is(a:hover, a:focus) {
+  background: var(--tertiary);
+  color: var(--white);
+}
+
 
 ul.bio {
   padding: 0px;
