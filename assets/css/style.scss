@@ -497,7 +497,7 @@ div.research > h2 {
   line-height: unset;
   min-width: max-content;
 }
-div:is(.grid, .research) > ul {
+div:is(.grid, .research) ul {
   list-style: none;
   padding: 0px;
 }
@@ -506,17 +506,17 @@ div:is(.grid, .research) > ul > li {
   border-bottom: 1px dotted var(--light);
   font-size: var(--font-size--small);
 }
-div.research > ul > li {
+div.research ul > li {
   border-bottom: 1px dotted var(--background);
 }
-div:is(.grid, .research) > ul > li:first-child {
+div:is(.grid, .research) ul > li:first-child {
   padding-top: 0px;
 }
-div:is(.grid, .research) > ul > li:last-child {
+div:is(.grid, .research) ul > li:last-child {
   border: 0px;
   padding-bottom: 0px;
 }
-div.research > ul > li > a {
+div.research ul > li > a {
   display: block;
   font-size: var(--font-size--normal);
   text-decoration: none;
