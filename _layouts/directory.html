@@ -5,7 +5,11 @@ layout: default
 {{ content }}
 
 {% if page.collection %}
-  {% assign list = site[page.collection] | sort: "title" %}
+  {% if page.collection == "sources" %}
+    {% assign list = site[page.collection] %}
+  {% else %}
+    {% assign list = site[page.collection] | sort: "title" %}
+  {% endif %}
   <ul class="boxes">
   {% for item in list %}
     {% if item.slug == "index" %}
