@@ -590,8 +590,13 @@ ul.bio li.github a {
   }
 
   .wrapper.cover .title {
-    height: unset;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     padding: unset;
+  }
+  .wrapper.cover .strap {
+    flex-grow: 0;
   }
   
   table {
@@ -635,10 +640,14 @@ ul.bio li.github a {
     grid-template-columns: auto;
   }
 
+  .wrapper.cover .bgd {
+    position: absolute;
+  }
   .wrapper.cover .content {
     border-radius: unset;
     padding: 0px;
     margin: 0px;
+    box-shadow: unset;
   }
 }
 
