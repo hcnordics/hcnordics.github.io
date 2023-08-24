@@ -99,9 +99,13 @@
             </ul>
           {% endif %}
 
-          {% if page.categories != "" %}
+          {% if page.projects or page.project %}
             {% assign all_projects = site.projects | sort: "title" %}
-            {% assign item_projects = page.categories %}
+            {% if page.projects %}
+              {% assign item_projects = page.projects %}
+            {% elsif page.project %}
+              {% assign item_projects = page.project %}
+            {% endif %}
             <ul class = "projects">
               {% for project in all_projects %}
                 {% if item_projects != "" %}
