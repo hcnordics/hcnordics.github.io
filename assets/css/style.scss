@@ -657,6 +657,9 @@ ul.boxes > li > :is(a:hover, a:focus) > span {
   color: var(--primary);
   text-decoration: underline 1px;
 }
+ul.boxes > li.completed > :is(a:hover::after, a:focus::after) {
+  color: var(--primary);
+}
 ul.bio > li > ul {
   padding: 0px;
   margin: 0px;
