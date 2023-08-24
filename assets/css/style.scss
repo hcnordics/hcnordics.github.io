@@ -501,7 +501,7 @@ div:is(.grid, .research) ul {
   list-style: none;
   padding: 0px;
 }
-div:is(.grid, .research) > ul > li {
+div:is(.grid, .research) ul > li {
   padding: 6px 0px;
   border-bottom: 1px dotted var(--light);
   font-size: var(--font-size--small);
