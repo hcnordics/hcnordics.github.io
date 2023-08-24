@@ -336,7 +336,7 @@ small {
   border-radius: var(--border-curve);
   font-variation-settings: 'wdth' 75;
   text-transform: capitalize;
-  border: var(--border-width) solid inherit;
+  border: var(--border-width) solid;
 }
 .strap a {
   color: var(--contrast);
