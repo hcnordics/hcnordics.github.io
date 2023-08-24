@@ -55,6 +55,18 @@
         <div class="content">
           {{ content }}
 
+
+          {% if page.collection == "projects" and page.slug != "index" %}
+            {% assign articleslist = site.research | where: "projects", site.slug %}
+            {% unless articleslist == empty %}
+              <ul class="research">
+                {% for item in articleslist %}
+                  <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
+                {% endfor %}
+              </ul>
+            {% endunless %}
+          {% endif %}
+
           {% if page.members %}
             {% assign team_members = site.team | sort: "surname" %}
             {% assign item_members = page.members %}

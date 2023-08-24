@@ -18,9 +18,9 @@ layout: default
   <div class="grid">
     <div>
       <h2><a href="{{ site.baseurl }}/projects">Project groups</a></h2>
-      {% assign sourceslist = site.projects %}
+      {% assign projectslist = site.projects %}
       <ul>
-      {% for item in sourceslist %}
+      {% for item in projectslist %}
         {% if item.slug == "index" %}
         {% else %}
         <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
