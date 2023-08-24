@@ -173,7 +173,9 @@ h1.cover span {
 .title, .content {
   box-sizing: border-box;
 }
-.title {
+
+
+.wrapper.cover .title {
   display: flex;
   flex-direction: column;
   color: var(--white);
@@ -182,10 +184,9 @@ h1.cover span {
   padding-bottom: 30px;
   margin-bottom: 20px;
 }
-.title .strap {
+.wrapper.cover .title .strap {
   flex-grow: 10;
 }
-
 .wrapper.cover h1 {
   color: var(--white);
 }
@@ -616,7 +617,7 @@ ul.bio li.github a {
     background: linear-gradient(to top, var(--background), transparent 50%);
   }
 
-  .title {
+  .wrapper.cover .title {
     height: unset;
     margin-bottom: 0px;
   }
@@ -665,7 +666,7 @@ ul.bio li.github a {
     grid-template-columns: auto;
   }
 
-  .title {
+  .wrapper.cover .title {
     padding: 0px 20px;
   }
 
