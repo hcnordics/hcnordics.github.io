@@ -5,7 +5,7 @@ layout: default
 {{ content }}
 
 {% if page.collection %}
-  {% assign list = site[page.collection] %}
+  {% assign list = site[page.collection] | sort: "date" %}
   <ul class="boxes">
   {% for item in list %}
     {% if item.slug == "index" %}
