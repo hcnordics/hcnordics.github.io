@@ -59,11 +59,14 @@
           {% if page.collection == "projects" and page.slug != "index" %}
             {% assign articleslist = site.research | where: "projects", page.slug %}
             {% unless articleslist == empty %}
-              <ul class="research">
-                {% for item in articleslist %}
-                  <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
-                {% endfor %}
-              </ul>
+              <div class="research">
+                <h2>Our research</h2>
+                <ul>
+                  {% for item in articleslist %}
+                    <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
+                  {% endfor %}
+                </ul>
+              </div>
             {% endunless %}
           {% endif %}
 
