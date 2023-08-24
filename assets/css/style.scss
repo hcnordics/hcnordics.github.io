@@ -154,6 +154,7 @@ header {
   padding: 60px 30px 30px 30px;
   margin: 0px 30px;
   width: 300px;
+  border: 0px;
   border-radius: 0px 0px var(--border-curve) var(--border-curve);
   position: fixed;
   left: 0px;
@@ -224,6 +225,7 @@ footer {
   bottom: 0px;
   margin: 0px;
   padding: 0px;
+  border: 0px;
   font-size: var(--font-size--tiny);
   width: 100%;
 }
