@@ -636,7 +636,7 @@ ul.bio li.github a {
     padding: 0px 20px;
   }
   section {
-    padding: 50px 0px;
+    padding: 50px 20px;
     box-sizing: border-box;
   }
   h1.cover {
@@ -654,6 +654,9 @@ ul.bio li.github a {
     grid-template-columns: auto;
   }
 
+  .wrapper-cover section {
+    padding: 50px 0px;
+  }
   .wrapper.cover .title {
     padding: 20px;
   }
