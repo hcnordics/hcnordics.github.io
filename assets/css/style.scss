@@ -310,6 +310,8 @@ footer::after {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   line-height: 1.8em;
   max-width: 1200px;
   min-height: 100%;
@@ -430,6 +432,7 @@ small {
   box-shadow: -40px -40px 50px -50px #00000033;
   margin: -30px;
   padding: 30px;
+  flex-grow: 10;
 }
 
 .strap {
