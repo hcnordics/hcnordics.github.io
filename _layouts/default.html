@@ -63,7 +63,7 @@
                 <h2>Our research</h2>
                 <ul>
                   {% for item in articleslist %}
-                    <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
+                    <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> {% if item.subtitle %}{{ item.subtitle }}{% endif %}</li>
                   {% endfor %}
                 </ul>
               </div>
