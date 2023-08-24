@@ -9,6 +9,10 @@ show_downloads: false
 permalink: /:slug
 
 collections:
+  projects:
+    output: true
+    layout: default
+    permalink: /projects/:name
   research:
     output: true
     layout: default
