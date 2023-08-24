@@ -325,14 +325,17 @@ small {
 }
 
 .strap {
-  /*margin-bottom: -20px;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
   line-height: 1em;
 }
 .strap a, .strap span {
   display: inline-block;
   text-decoration: none;
   padding: 6px;
-  margin-right: 3px;
   border-radius: var(--border-curve);
   font-variation-settings: 'wdth' 75;
   text-transform: capitalize;

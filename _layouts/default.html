@@ -54,22 +54,6 @@
         </div>
         <div class="content">
           {{ content }}
-        
-          {% if page.categories %}
-            {% assign all_projects = site.projects | sort: "title" %}
-            {% assign item_projects = page.categories %}
-            <ul class = "projects">
-              {% for project in all_projects %}
-                {% if item_projects != "" %}
-                  {% for item_project in item_projects %}
-                    {% if item_project == project.slug %}
-                      <li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}  
-              {% endfor %}
-            </ul>
-          {% endif %}
 
           {% if page.members %}
             {% assign team_members = site.team | sort: "surname" %}
@@ -114,6 +98,23 @@
             {% endfor %}
             </ul>
           {% endif %}
+
+          {% if page.categories %}
+            {% assign all_projects = site.projects | sort: "title" %}
+            {% assign item_projects = page.categories %}
+            <ul class = "projects">
+              {% for project in all_projects %}
+                {% if item_projects != "" %}
+                  {% for item_project in item_projects %}
+                    {% if item_project == project.slug %}
+                      <li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}  
+              {% endfor %}
+            </ul>
+          {% endif %}
+
         </div>
       </section>
       <footer>
