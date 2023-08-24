@@ -599,6 +599,13 @@ ul.bio li.github a {
   .wrapper.cover .bgd {
     height: 100vh;
   }
+  .wrapper.cover .bgd::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, var(--background), transparent 50%);
+  }
   .wrapper.cover .title {
     height: unset;
   }
@@ -629,7 +636,7 @@ ul.bio li.github a {
     padding: 0px 20px;
   }
   section {
-    padding: 50px 20px;
+    padding: 50px 0px;
     box-sizing: border-box;
   }
   h1.cover {
@@ -638,7 +645,7 @@ ul.bio li.github a {
     margin-top: -50px;
   }
   h1.cover + blockquote, h1.cover + hr + blockquote, .cover .content > hr:first-child + blockquote {
-    margin: -20px 0px 22px 0px;
+    margin: 0px 0px 22px 0px;
   }
   .strap.cover {
     margin-top: calc(-50px + 1em);
@@ -647,11 +654,12 @@ ul.bio li.github a {
     grid-template-columns: auto;
   }
 
+  .wrapper.cover .title {
+    padding: 20px;
+  }
   .wrapper.cover .content {
     border-radius: unset;
-    padding: 0px;
-    margin: 0px;
-    box-shadow: unset;
+    padding: 0px 20px;
   }
 }
 
