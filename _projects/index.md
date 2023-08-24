@@ -1,5 +1,5 @@
 ---
 title: "Project groups"
 layout: directory
-cover: soroedrengene.jpg
+cover: soroedrengene.png
 ---
