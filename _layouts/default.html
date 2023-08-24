@@ -99,7 +99,7 @@
             </ul>
           {% endif %}
 
-          {% if page.categories %}
+          {% if page.categories != "" %}
             {% assign all_projects = site.projects | sort: "title" %}
             {% assign item_projects = page.categories %}
             <ul class = "projects">
