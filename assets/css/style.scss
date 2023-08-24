@@ -148,15 +148,12 @@ h3 {
   display: none;
 }
 
-header, footer {
-  border: 0px;
-  margin: 0px 30px;
-}
 header {
   background: radial-gradient(circle at top left, var(--dark) 0%, var(--secondary) 60%, var(--primary) 100%);
   color: var(--white);
   box-shadow: -4px 5px 3px -3px #00000033 inset;
   padding: 60px 30px 30px 30px;
+  margin: 0px 30px;
   width: 300px;
   border-radius: 0px 0px var(--border-curve) var(--border-curve);
   position: fixed;
@@ -230,11 +227,12 @@ footer {
   padding: 0px;
   font-size: var(--font-size--tiny);
   width: 100%;
-  height: 150px;
 }
 footer ul {
   list-style: none;
-  padding: 0px 30px;
+  padding: 50px 30px 20px 30px;
+  margin: 0px;
+  background: var(--white);
   display: grid;
   grid-template-columns: repeat(auto-fit, 100px);
   grid-gap: 10px;
@@ -250,6 +248,7 @@ footer::after {
   display: block;
   height: 50px;
   background: linear-gradient(to bottom, #00000033 0%, #00000000 10%, #FFFFFF44 100%),radial-gradient(ellipse at top, var(--primary) 0%, var(--dark) 100%);
+  box-shadow: 0px 40px 50px -40px #00000080 inset
   margin: 0px;
 }
 
@@ -262,7 +261,7 @@ section {
   width: 100%;
   margin: 0px auto;
   float: none;
-  padding: 30px 50px 30px 380px;
+  padding: 30px 50px 0px 380px;
   flex-grow: 2;
 }
 
@@ -554,15 +553,11 @@ ul.bio li.github a {
     padding: 20px 50px;
     position: relative;
   }
-  footer {
-    background: linear-gradient(to top, #FFFFFF, transparent);
-  }
   footer::after {
     height: 30px;
-    margin: 0px;
   }
   footer ul {
-    padding: 0px 50px;
+    padding: 50px 50px 20px 50px;
   }
   header {
     box-shadow: 0px -4px 3px -3px #00000033 inset;
@@ -574,7 +569,7 @@ ul.bio li.github a {
   }
   section {
     max-width: 850px;
-    padding: 50px;
+    padding: 50px 50px 0px 50px;
     min-height: 100%;
   }
 
@@ -617,10 +612,10 @@ ul.bio li.github a {
     margin-right: 3px;
   }
   footer ul {
-    padding: 0px 20px;
+    padding: 50px 20px 20px 20px;
   }
   section {
-    padding: 50px 20px;
+    padding: 50px 20px 0px 20px;
     box-sizing: border-box;
   }
 
@@ -633,7 +628,7 @@ ul.bio li.github a {
   }
 
   .wrapper.cover section {
-    padding: 30px 0px;
+    padding: 30px 0px 0px 0px;
   }
   .wrapper.cover .content {
     border-radius: unset;
