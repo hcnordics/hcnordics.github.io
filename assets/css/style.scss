@@ -45,7 +45,7 @@ body, header, section, footer {
   box-sizing: border-box;
 }
 
-body, h1, h1.header, h2, h3, h4, h5, h6, th {
+body, h1, .sitetitle, h2, h3, h4, h5, h6, th {
   font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -114,14 +114,14 @@ h3 {
   border: none;
 }
 
-h1.header, h4, h5, h6, th {
+.sitetitle, h4, h5, h6, th {
   font-variation-settings: 'wdth' 75;
 }
-h1.header {
+.sitetitle {
   font-weight: 500;
   font-size: var(--font-size--large);
 }
-h1.header::before {
+.sitetitle::before {
   content: "HCNC";
   font-size: var(--font-size--medium);
   font-weight: 300;
@@ -166,7 +166,7 @@ h1.cover span {
   left: 20px;
 }
 
-h1.header::after, h1.cover::after {
+.sitetitle::after, h1.cover::after {
   display: none;
 }
 
@@ -233,7 +233,7 @@ header li a.home {
 header li a.about {
   background: url(../images/about.png) no-repeat;
 }
-p.header {
+header .sitetitle + p {
   font-size: var(--font-size--small);
 }
 
@@ -353,6 +353,47 @@ small {
   min-height: 100vh;
   justify-content: flex-start;
   align-items: stretch;
+  position: relative;
+}
+
+.wrapper.cover > *:not(.bgd) {
+  z-index: 1;
+}
+.wrapper.cover .bgd {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: max(3em, 40vh);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
+  background-color: var(--dark);
+}
+.wrapper.cover .bgd::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at 75% 0%, var(--contrast-alt) 0%, var(--primary) 50%, transparent, var(--dark-alt) 100%);
+  mix-blend-mode: soft-light;
+}
+
+.wrapper.cover header {
+  background-image: radial-gradient(circle at top left, var(--dark) -50%, transparent 60%, var(--primary) 200%);
+  background-color: #00000033;
+  backdrop-filter: blur(10px);
+  filter: drop-shadow(5px 5px 10px -5px #00000033);
+}
+.wrapper.cover .content {
+  background: var(--background);
+  border-radius: var(--border-curve);
+  filter: drop-shadow(0px -5px 10px -5px #00000033);
 }
 
 .strap {
@@ -380,13 +421,13 @@ small {
   border: var(--border-width) solid var(--secondary);
   color: var(--secondary);
 }
-.strap.cover {
+.strap.cover, .wrapper.cover .strap {
   margin-bottom: calc(-30px - 1em - 2 * var(--border-width));
   margin-top: 1em;
   position: relative;
   z-index: 10;
 }
-.strap.cover span {
+.strap.cover span, .wrapper.cover .strap span {
   border: var(--border-width) solid var(--light-alt);
   color: var(--light-alt);
 }

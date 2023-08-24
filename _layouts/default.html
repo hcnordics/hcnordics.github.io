@@ -15,10 +15,14 @@
     {% include head-custom.html %}
   </head>
   <body>
+  {% if page.cover %}
+    <div class="wrapper cover"><div class="bgd" style="background-image: radial-gradient(ellipse at top left, transparent 50%, var(--secondary)), url({{ site.baseurl }}/assets/images/{{ page.cover | default: odense_k.png }})"></div>
+  {% else %}
     <div class="wrapper">
+  {% endif %}
       <header>
-        <h1 class="header"><a href="{{ site.url }}{{ site.baseurl }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+        <div class="sitetitle"><a href="{{ site.url }}{{ site.baseurl }}">{{ site.title | default: site.github.repository_name }}</a></div>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         <ul>
           {% if site.show_downloads %}
@@ -36,70 +40,64 @@
       </header>
 
       <section>
-        {% if page.collection and page.slug != "index" %}
-          {% if page.cover %}
-          <div class="strap cover">
-          {% else %}
-          <div class="strap">
+      {% if page.collection and page.slug != "index" %}
+        <div class="strap">
+          <a href="{{ site.baseurl }}/{{ page.collection }}/">{{ page.collection }}</a>
+          {% if page.status %}<span>{{ page.status }}</span>{% endif %}
+        </div>
+      {% endif %}
+        <h1>{{ page.title | default: site.title }}</h1>
+      {% if page.subtitle %}
+        <p class="subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+
+        <div class="content">
+          {{ content }}
+        
+          {% if page.members %}
+            {% assign team_members = site.team | sort: "surname" %}
+            {% assign item_members = page.members %}
+            <ul class="bio">
+            {% for team_member in team_members %}
+              {% if page.members != "" %}
+                {% for item_member in item_members %}
+                  {% if team_member.username == item_member %}
+                  <li><span>{{ team_member.firstname }} <span>{{ team_member.surname }}</span></span>
+                    <ul>
+                      <li>{{ team_member.position }}</li>
+                      <li>{{ team_member.institution }}</li>
+                      {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
+                      {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="Twitter"></a></li>{% endif %}
+                      {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
+                    </ul>
+                  </li>
+                  {% elsif team_member.surname == item_member %}
+                  <li><span>{{ team_member.firstname }} <span>{{ team_member.surname }}</span></span>
+                    <ul>
+                      <li>{{ team_member.position }}</li>
+                      <li>{{ team_member.institution }}</li>
+                      {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
+                      {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="Twitter"></a></li>{% endif %}
+                      {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
+                    </ul>
+                  </li>
+                  {% endif %}
+                {% endfor %}
+              {% else %}
+                  <li><span>{{ team_member.firstname }} <span>{{ team_member.surname }}</span></span>
+                    <ul>
+                      <li>{{ team_member.position }}</li>
+                      <li>{{ team_member.institution }}</li>
+                      {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
+                      {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="Twitter"></a></li>{% endif %}
+                      {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
+                    </ul>
+                  </li>
+              {% endif %}
+            {% endfor %}
+            </ul>
           {% endif %}
-            <a href="{{ site.baseurl }}/{{ page.collection }}/">{{ page.collection }}</a>
-            {% if page.status %}<span>{{ page.status }}</span>{% endif %}
-          </div>
-        {% endif %}
-        
-        {% if page.cover %}
-          <h1 class="cover" style="background-image: radial-gradient(ellipse at top left, transparent 50%, var(--secondary)), url({{ site.baseurl }}/assets/images/{{ page.cover | default: folk.jpg }})"><span>{{ page.title | default: site.title }}</span></h1>
-        {% else %}
-          <h1>{{ page.title | default: site.title }}</h1>
-        {% endif %}
-        {% if page.subtitle %}
-           <p class="subtitle">{{ page.subtitle }}</p>
-        {% endif %}
-        {{ content }}
-        
-        {% if page.members %}
-          {% assign team_members = site.team | sort: "surname" %}
-          {% assign item_members = page.members %}
-          <ul class="bio">
-          {% for team_member in team_members %}
-            {% if page.members != "" %}
-              {% for item_member in item_members %}
-                {% if team_member.username == item_member %}
-                <li><span>{{ team_member.firstname }} <span>{{ team_member.surname }}</span></span>
-                  <ul>
-                    <li>{{ team_member.position }}</li>
-                    <li>{{ team_member.institution }}</li>
-                    {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
-                    {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="Twitter"></a></li>{% endif %}
-                    {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
-                  </ul>
-                </li>
-                {% elsif team_member.surname == item_member %}
-                <li><span>{{ team_member.firstname }} <span>{{ team_member.surname }}</span></span>
-                  <ul>
-                    <li>{{ team_member.position }}</li>
-                    <li>{{ team_member.institution }}</li>
-                    {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
-                    {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="Twitter"></a></li>{% endif %}
-                    {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
-                  </ul>
-                </li>
-                {% endif %}
-              {% endfor %}
-            {% else %}
-                <li><span>{{ team_member.firstname }} <span>{{ team_member.surname }}</span></span>
-                  <ul>
-                    <li>{{ team_member.position }}</li>
-                    <li>{{ team_member.institution }}</li>
-                    {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
-                    {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="Twitter"></a></li>{% endif %}
-                    {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
-                  </ul>
-                </li>
-            {% endif %}
-          {% endfor %}
-          </ul>
-        {% endif %}
+        </div>
       </section>
       <footer>
         <ul>
