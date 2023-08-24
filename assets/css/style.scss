@@ -312,7 +312,7 @@ table + blockquote {
   border-radius: 0px;
   border-bottom: 2px solid var(--tertiary);
 }
-h1.cover + blockquote, h1.cover + hr + blockquote, .cover .content > hr:first-child + blockquote {
+.cover .content > hr:first-child + blockquote {
   margin: -20px -20px 30px -20px;
 }
 
@@ -624,9 +624,6 @@ ul.bio li.github a {
     box-sizing: border-box;
   }
 
-  .strap.cover {
-    margin-top: calc(-50px + 1em);
-  }
   .grid {
     grid-template-columns: auto;
   }
@@ -643,6 +640,11 @@ ul.bio li.github a {
     padding: 20px;
     margin: 0px;
   }
+
+  .cover .content > hr:first-child + blockquote {
+    margin: 0px 0px 30px 0px;
+  }
+
 }
 
 @media print, screen and (min-width: 1600px) {
