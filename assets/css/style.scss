@@ -552,8 +552,8 @@ ul.projects::before {
   content: "Related";
   display: block;
   padding: calc(6px + var(--border-width));
-  color: var(--tertiary);
-  background: var(--light);
+  color: var(--white);
+  background: var(--primary);
   border-radius: var(--border-curve);
   font-variation-settings: 'wdth' 75;
 }
@@ -562,7 +562,7 @@ ul.projects > li {
   margin: 0px;
 }
 ul.projects > li > a {
-  color: var(--primary);
+  color: var(--link);
   text-decoration: none;
   padding: 6px;
   border: var(--border-width) solid;
@@ -571,7 +571,7 @@ ul.projects > li > a {
   text-transform: capitalize;
 }
 ul.projects > li > :is(a:hover, a:focus) {
-  color: var(--tertiary);
+  color: var(--primary);
 }
 
 
