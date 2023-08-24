@@ -49,7 +49,7 @@ layout: default
 
     <div>
       <h2><a href="{{ site.baseurl }}/research">Research</a></h2>
-      {% assign articleslist = site.research | where "status", "completed" %}
+      {% assign articleslist = site.research %}
       <ul>
         {% for item in articleslist %}
           {% unless item.slug == "index" %}
@@ -58,7 +58,7 @@ layout: default
         {% endfor %}
       </ul>
 
-      {% assign articleslist = site.research | where "status", "completed" %}
+      {% assign articleslist = site.research %}
       {% unless articleslist == empty %}
         <h3>Completed work</h3>
         <ul>
