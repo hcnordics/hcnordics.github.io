@@ -476,7 +476,7 @@ thead, tbody, tfoot {
 }
 
 div.research {
-  padding: 12px 20px;
+  padding: 0px 20px 12px 20px;
   margin: 22px 0px;
   background: var(--light);
   border-radius: var(--border-curve);
@@ -485,9 +485,13 @@ div.research {
 div.research > h2 {
   font-variation-settings: 'wdth' 75;
   font-weight: 500;
-  margin: 0px -20px 10px -20px;
-  padding: 5px 20px;
-  border-color: var(--background);
+  font-size: var(--font-size--medium);
+  padding: 12px 20px;
+  background: radial-gradient(ellipse at bottom right, var(--dark), var(--secondary));
+  color: var(--white);
+  border: 0px;
+  border-radius: var(--border-curve) var(--border-curve) 0px 0px;
+  box-shadow: 0px 5px 5px -5px #00000080;
 }
 div.research > *:last-child {
   margin-bottom: 0px;
