@@ -194,7 +194,7 @@ h1.cover span {
   background: linear-gradient(to right, var(--white) 0%, var(--light) 100%);
 }
 .wrapper.cover h1 + p.subtitle {
-  color: var(--light);
+  color: var(--light-alt);
 }
 .wrapper.cover h1:last-child::after {
   display: none;
@@ -422,9 +422,9 @@ small {
 
 .wrapper.cover header {
   background-image: radial-gradient(circle at top left, var(--dark) -50%, transparent 60%, var(--primary) 200%);
-  background-color: #00000033;
-  backdrop-filter: blur(10px);
-  box-shadow: 5px 5px 10px -5px #00000033;
+  background-color: #3A0CA380;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 30px 50px -30px var(--black)
 }
 .wrapper.cover .content {
   background: var(--background);
@@ -466,10 +466,19 @@ small {
   position: relative;
   z-index: 10;
 }*/
+.wrapper.cover .strap a {
+  background: var(--contrast);
+  border-color: var(--contrast);
+  color: var(--white);
+}
+.wrapper.cover .strap :is(a:hover, a:active, a:focus) {
+  background: var(--secondary);
+}
 .strap.cover span, .wrapper.cover .strap span {
-  border: var(--border-width) solid var(--light-alt);
+  border-color: inherit;
   color: var(--light-alt);
 }
+
 
 
 table {
