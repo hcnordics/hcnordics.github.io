@@ -57,7 +57,7 @@
 
 
           {% if page.collection == "projects" and page.slug != "index" %}
-            {% assign articleslist = site.research | where: "projects", site.slug %}
+            {% assign articleslist = site.research | where: "projects", page.slug %}
             {% unless articleslist == empty %}
               <ul class="research">
                 {% for item in articleslist %}
