@@ -336,17 +336,15 @@ small {
   border-radius: var(--border-curve);
   font-variation-settings: 'wdth' 75;
   text-transform: capitalize;
+  border: var(--border-width) solid inherit;
 }
 .strap a {
-  border: var(--border-width) solid var(--contrast);
   color: var(--contrast);
 }
 .strap a:hover, .strap a:focus {
-  border: var(--border-width) solid var(--light);
-  color: var(--light);
+  color: var(--tertiary);
 }
 .strap span {
-  border: var(--border-width) solid var(--secondary);
   color: var(--secondary);
 }
 
@@ -429,7 +427,6 @@ small {
 }
 .wrapper.cover .strap span {
   color: var(--light-alt);
-  border-color: inherit;
 }
 
 .wrapper.cover h1 {
