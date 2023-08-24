@@ -582,6 +582,7 @@ ul:is(.bio, .boxes) {
   grid-gap: 20px;
   justify-content: space-between;
   align-content: flex-start;
+  align-items: stretch;
   list-style: none;
 }
 ul.bio > li {
@@ -608,6 +609,7 @@ ul.boxes > li > a {
   background: var(--light-alt);
   border-radius: var(--border-curve);
   box-sizing: border-box;
+  text-decoration: none;
 }
 ul.bio > li > span,
 ul.boxes > li > a > span {
@@ -620,6 +622,13 @@ ul.boxes > li > a > span {
 }
 ul.boxes > li > a > span {
   color: var(--link);
+}
+ul.boxes > li > :is(a:hover, a:focus) {
+  border-color: var(--primary);
+}
+ul.boxes > li > :is(a:hover, a:focus) > span {
+  color: var(--primary);
+  text-decoration: underline 1px;
 }
 ul.bio > li > ul {
   padding: 0px;
