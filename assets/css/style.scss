@@ -54,12 +54,11 @@ a {
   text-underline-offset: 0.18ch;
   font-weight: inherit;
 }
-a:hover, a:focus {
-  opacity: 0.9;
+a:hover, a:focus, a:active {
+  opacity: 0.75;
 }
 a:active {
-  opacity: 0.75;
-  filter: brightness(1.5);
+  filter: brightness(1.25) saturate(1.25);
 }
 
 h1 {
