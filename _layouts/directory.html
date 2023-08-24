@@ -47,23 +47,24 @@ layout: default
 
     <div>
       <h2><a href="{{ site.baseurl }}/research">Research</a></h2>
-      {% assign articleslist = site.research %}
+      {% assign articleslist = site.research | where_exp "item", "item.status != 'completed'" %}
       <ul>
         {% for item in articleslist %}
-          {% unless item.slug == "index" or item.status == "completed" %}
+          {% unless item.slug == "index" %}
             <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
           {% endunless %}
         {% endfor %}
       </ul>
 
-      <h3>Completed work</h3>
-      <ul>
-        {% for item in articleslist %}
-          {% if item.status == "completed" %}
+      {% assign articleslist = site.research | where "status", "completed" %}
+      {% unless articleslist == empty %}
+        <h3>Completed work</h3>
+        <ul>
+          {% for item in articleslist %}
             <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+          {% endfor %}
+        </ul>
+      {% endunless %}
     </div>
 
   </div>
