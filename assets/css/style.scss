@@ -513,7 +513,7 @@ div.research ul > li {
 div:is(.grid, .research) ul > li:first-child {
   padding-top: 0px;
 }
-div:is(.grid, .research) ul > li:last-child {
+div.research ul > li:last-child {
   border: 0px;
   padding-bottom: 0px;
 }
