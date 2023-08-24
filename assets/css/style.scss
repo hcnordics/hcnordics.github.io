@@ -510,11 +510,15 @@ div:is(.grid, .research) ul > li {
   border-bottom: 1px dotted var(--light);
   font-size: var(--font-size--small);
 }
-div.research ul > li {
-  border-bottom: 1px dotted var(--background);
-}
 div:is(.grid, .research) ul > li:first-child {
   padding-top: 0px;
+}
+div:is(.grid, .research) h3 + ul > li:first-child {
+  padding-top: 6px;
+  border-top: 1px dotted var(--light);
+}
+div.research ul > li {
+  border-color: var(--background);
 }
 div.research ul > li:last-child {
   border: 0px;
