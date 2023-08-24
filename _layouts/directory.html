@@ -6,14 +6,14 @@ layout: default
 
 {% if page.collection %}
   {% assign list = site[page.collection] %}
-  <ol>
+  <ul>
   {% for item in list %}
     {% if item.slug == "index" %}
     {% else %}
     <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>{% if item.subtitle %}: {{ item.subtitle }}{% endif %}</li>
     {% endif %}
   {% endfor %}
-  </ol>
+  </ul>
 {% else %}
   <div class="grid">
     <div>
