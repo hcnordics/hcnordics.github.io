@@ -477,10 +477,22 @@ thead, tbody, tfoot {
 
 div.research {
   padding: 12px 20px;
+  margin: 22px 0px;
   background: var(--light);
   border-radius: var(--border-curve);
   box-sizing: border-box;
 }
+div.research > h2 {
+  font-variation-settings: 'wdth' 75;
+  font-weight: 500;
+  margin: 0px -20px 10px -20px;
+  padding: 5px 20px;
+  border-color: var(--background);
+}
+div.research > *:last-child {
+  margin-bottom: 0px;
+}
+
 
 ul.projects {
   list-style: none;
