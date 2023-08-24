@@ -55,8 +55,12 @@ a {
   text-underline-offset: 0.18ch;
   font-weight: inherit;
 }
-a:hover, a:active, a:focus {
+a:hover, a:focus {
   opacity: 0.9;
+}
+a:active {
+  opacity: 0.75;
+  filter: brightness(1.5);
 }
 
 h1 {
@@ -103,7 +107,7 @@ h2 a::after, h2 a::after, h2 a::after {
   font-size: 120%;
   line-height: 1em;
 }
-h2 a:hover, h2 a:focus, h2 a:active {
+h2 a:hover, h2 a:focus {
   text-decoration: none;
   color: var(--dark-alt);
 }
@@ -173,7 +177,7 @@ header li {
   padding: 0px;
   width: 150px;
 }
-header li:active, header li:hover {
+header li:hover {
   background: none;
 }
 header li a {
@@ -183,7 +187,7 @@ header li a {
   padding: 6px;
   display: block;
 }
-header li a:active, header li a:hover, header li a:focus {
+header li a:hover, header li a:focus {
   border: var(--border-width) solid var(--contrast-alt);
 }
 header li a.buttons {
@@ -337,7 +341,7 @@ small {
   border: var(--border-width) solid var(--contrast);
   color: var(--contrast);
 }
-.strap a:hover, .strap a:active, .strap a:focus {
+.strap a:hover, .strap a:focus {
   border: var(--border-width) solid var(--light);
   color: var(--light);
 }
@@ -418,7 +422,7 @@ small {
   border-color: var(--contrast);
   color: var(--white);
 }
-.wrapper.cover .strap :is(a:hover, a:active, a:focus) {
+.wrapper.cover .strap :is(a:hover, a:focus) {
   background: var(--secondary);
   color: var(--light);
   border-color: inherit;
@@ -526,7 +530,7 @@ ul.bio li.buttons a {
   height: 6px;
   width: 6px;
 }
-ul.bio li.buttons a:hover, ul.bio li.buttons a:active, ul.bio li.buttons a:focus {
+ul.bio li.buttons a:hover, ul.bio li.buttons a:focus {
   border: var(--border-width) solid var(--contrast-alt);
 }
 ul.bio li.website a {
