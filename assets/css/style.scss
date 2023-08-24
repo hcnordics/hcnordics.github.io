@@ -517,7 +517,7 @@ div:is(.grid, .research) ul > li:last-child {
   border: 0px;
   padding-bottom: 0px;
 }
-div.research ul > li > a {
+div:is(.grid, .research) ul > li > a {
   display: block;
   font-size: var(--font-size--normal);
   text-decoration: none;
