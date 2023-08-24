@@ -58,7 +58,7 @@ layout: default
         {% endfor %}
       </ul>
 
-      {% assign articleslist = site.research %}
+      {% assign articleslist = site.research | where: "status", "completed" %}
       {% unless articleslist == empty %}
         <h3>Completed work</h3>
         <ul>
