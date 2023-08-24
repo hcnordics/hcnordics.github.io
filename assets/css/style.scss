@@ -584,6 +584,7 @@ ul:is(.bio, .boxes) {
   align-content: flex-start;
   align-items: stretch;
   list-style: none;
+  line-height: 1.8rem;
 }
 ul.bio > li {
   flex: auto;
@@ -612,6 +613,7 @@ ul.boxes > li > a {
   text-decoration: none;
   font-size: var(--font-size--small);
   height: 100%;
+  line-height: 1.8;
 }
 ul.bio > li > span,
 ul.boxes > li > a > span {
