@@ -6,11 +6,11 @@ layout: default
 
 {% if page.collection %}
   {% assign list = site[page.collection] %}
-  <ul>
+  <ul class="boxes">
   {% for item in list %}
     {% if item.slug == "index" %}
     {% else %}
-    <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> {% if item.subtitle %}{{ item.subtitle }}{% endif %}</li>
+    <li><a href="{{ site.baseurl }}{{ item.url }}"><span>{{ item.title }}</span> {% if item.subtitle %}{{ item.subtitle }}{% endif %}</a></li>
     {% endif %}
   {% endfor %}
   </ul>

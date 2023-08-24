@@ -575,17 +575,17 @@ ul.projects > li > :is(a:hover, a:focus) {
 }
 
 
-ul.bio {
+ul:is(.bio, .boxes) {
   padding: 0px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
   justify-content: space-between;
   align-content: flex-start;
+  list-style: none;
 }
 ul.bio > li {
   flex: auto;
-  list-style: none;
   margin: 0px;
   padding: 20px;
   border-top: var(--border-cap) solid var(--contrast);
@@ -594,13 +594,32 @@ ul.bio > li {
   border-radius: var(--border-curve);
   box-sizing: border-box;
 }
-ul.bio > li > span {
+ul.boxes > li {
+  flex: auto;
+  margin: 0px;
+  padding: 0px;
+}
+ul.boxes > li > a {
+  display: block;
+  margin: 0px;
+  padding: 20px;
+  border-top: var(--border-cap) solid var(--link);
+  color: var(--foreground);
+  background: var(--light-alt);
+  border-radius: var(--border-curve);
+  box-sizing: border-box;
+}
+ul.bio > li > span,
+ul.boxes > li > a > span {
   display: block;
   font-variation-settings: 'wdth' 75;
   font-size: var(--font-size--medium);
   font-weight: 500;
   line-height: 1em;
   margin-bottom: 20px;
+}
+ul.boxes > li > a > span {
+  color: var(--link);
 }
 ul.bio > li > ul {
   padding: 0px;
