@@ -175,16 +175,21 @@ h1.cover span {
   color: var(--white);
   align-items: flex-end;
   height: max(3em, 40vh);
-  padding: 20px;  
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 .wrapper.cover h1 {
   color: var(--white);
 }
 .wrapper.cover h1::after {
+  background: linear-gradient(to right, var(--white) 0%, var(--light) 100%);
+}
+.wrapper.cover h1:last-child::after {
   display: none;
 }
 .wrapper.cover .strap {
-  align-self: flex-start;
+  flex-grow: 10;
 }
 
 .sitetitle::after, h1.cover::after {
@@ -205,6 +210,7 @@ header {
   position: fixed;
   left: 0px;
   top: 0px;
+  z-index: 10;
 }
 
 header ul {
@@ -376,7 +382,7 @@ small {
   position: relative;
 }
 
-.wrapper.cover > *:not(.bgd) {
+.wrapper.cover > *:not(header, .bgd) {
   z-index: 1;
 }
 .wrapper.cover .bgd {
@@ -408,14 +414,14 @@ small {
   background-image: radial-gradient(circle at top left, var(--dark) -50%, transparent 60%, var(--primary) 200%);
   background-color: #00000033;
   backdrop-filter: blur(10px);
-  filter: drop-shadow(5px 5px 10px -5px #00000033);
+  box-shadow: 5px 5px 10px -5px #00000033;
 }
 .wrapper.cover .content {
   background: var(--background);
   border-radius: var(--border-curve);
-  filter: drop-shadow(0px -5px 10px -5px #00000033);
-  margin: -20px;
-  padding: 20px;
+  box-shadow: 0px -5px 10px -5px #00000033;
+  margin: -30px;
+  padding: 30px;
 }
 
 .strap {
@@ -582,6 +588,11 @@ ul.bio li.github a {
     padding: 50px;
     min-height: 100%;
   }
+
+  .wrapper.cover .title {
+    height: unset;
+    padding: unset;
+  }
   
   table {
     max-width: -moz-fit-content;
@@ -622,6 +633,12 @@ ul.bio li.github a {
   }
   .grid {
     grid-template-columns: auto;
+  }
+
+  .wrapper.cover .content {
+    border-radius: unset;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
