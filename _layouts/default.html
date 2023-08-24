@@ -40,17 +40,18 @@
       </header>
 
       <section>
-      {% if page.collection and page.slug != "index" %}
-        <div class="strap">
-          <a href="{{ site.baseurl }}/{{ page.collection }}/">{{ page.collection }}</a>
-          {% if page.status %}<span>{{ page.status }}</span>{% endif %}
+        <div class="title">
+          {% if page.collection and page.slug != "index" %}
+            <div class="strap">
+              <a href="{{ site.baseurl }}/{{ page.collection }}/">{{ page.collection }}</a>
+              {% if page.status %}<span>{{ page.status }}</span>{% endif %}
+            </div>
+          {% endif %}
+            <h1>{{ page.title | default: site.title }}</h1>
+          {% if page.subtitle %}
+            <p class="subtitle">{{ page.subtitle }}</p>
+          {% endif %}
         </div>
-      {% endif %}
-        <h1>{{ page.title | default: site.title }}</h1>
-      {% if page.subtitle %}
-        <p class="subtitle">{{ page.subtitle }}</p>
-      {% endif %}
-
         <div class="content">
           {{ content }}
         
