@@ -475,25 +475,34 @@ ul.projects {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
   gap: 10px;
+  line-height: 1em;
+}
+ul.projects::before {
+  content: "Related";
+  display: block;
+  padding: calc(6px + var(--border-width));
+  color: var(--tertiary);
+  padding: 6px;
+  border-radius: var(--border-curve);
+  font-variation-settings: 'wdth' 75;
 }
 ul.projects > li {
   padding: 0px;
   margin: 0px;
 }
 ul.projects > li > a {
-  background: var(--light);
-  color: var(--secondary);
+  color: var(--primary);
   text-decoration: none;
-  padding: calc(6px + var(--border-width));
+  padding: 6px;
+  border: var(--border-width) solid;
   border-radius: var(--border-curve);
   font-variation-settings: 'wdth' 75;
   text-transform: capitalize;
 }
 ul.projects > li > :is(a:hover, a:focus) {
-  background: var(--tertiary);
-  color: var(--white);
+  color: var(--tertiary);
 }
 
 
