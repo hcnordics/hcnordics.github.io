@@ -173,7 +173,7 @@ h1.cover span {
   display: flex;
   flex-direction: column;
   color: var(--white);
-  align-items: flex-end;
+  justify-content: flex-end;
   height: max(3em, 40vh);
   padding-bottom: 30px;
   box-sizing: border-box;
@@ -359,7 +359,7 @@ table + blockquote {
   border-bottom: 2px solid var(--tertiary);
 }
 h1.cover + blockquote, h1.cover + hr + blockquote, .cover .content > hr:first-child + blockquote {
-  margin: -10px -20px 30px -20px;
+  margin: -20px -20px 30px -20px;
 }
 
 h1 + hr, p.subtitle + hr, h2 + hr, h3 + hr, .content > hr:first-child {
@@ -626,7 +626,7 @@ ul.bio li.github a {
     margin-top: -50px;
   }
   h1.cover + blockquote, h1.cover + hr + blockquote, .cover .content > hr:first-child + blockquote {
-    margin: -10px 0px 22px 0px;
+    margin: -20px 0px 22px 0px;
   }
   .strap.cover {
     margin-top: calc(-50px + 1em);
