@@ -3,6 +3,7 @@ title: "In the footsteps of Chalmers and Ørsted"
 subtitle: "The students of higher technical education in Sweden and Denmark, 1829–1929"
 layout: default
 members: [Ford]
+cover: chalmers.png
 ---
 
 Both Chalmers University of Technology (Chalmers) in Sweden and the Technical University of Denmark (DTU) opened in 1829. The establishment of these polytechnic institutions was a response to the technological advances of the emerging industrial era. However, the two institutions differed in terms of their initial structure and entry requirements.

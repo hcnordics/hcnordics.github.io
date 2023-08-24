@@ -16,7 +16,7 @@
   </head>
   <body>
   {% if page.cover %}
-    <div class="wrapper cover"><div class="bgd" style="background-image: radial-gradient(ellipse at top left, transparent 50%, var(--secondary)), url({{ site.baseurl }}/assets/images/{{ page.cover | default: odense_k.png }})"></div>
+    <div class="wrapper cover"><div class="bgd" style="background-image: radial-gradient(ellipse at top left, transparent 50%, var(--secondary)), url({{ site.baseurl }}/assets/images/header/{{ page.cover | default: odense_k.png }})"></div>
   {% else %}
     <div class="wrapper">
   {% endif %}
