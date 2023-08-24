@@ -170,6 +170,10 @@ h1.cover span {
   left: 20px;
 }
 
+.title, .content {
+  box-sizing: border-box;
+}
+
 .wrapper.cover .title {
   display: flex;
   flex-direction: column;
@@ -655,14 +659,15 @@ ul.bio li.github a {
   }
 
   .wrapper-cover section {
-    padding: 50px 0px;
+    padding: 30px 0px;
   }
   .wrapper.cover .title {
     padding: 20px;
   }
   .wrapper.cover .content {
     border-radius: unset;
-    padding: 0px 20px;
+    padding: 20px;
+    margin: 0px;
   }
 }
 
