@@ -6,7 +6,7 @@ layout: default
 members: [Ranestad, Ford]
 ---
 
-The aim of this project is to analyse the value placed upon social background, education, academic performance and work experience by employers in industry and business in Sweden, Denmark and Norway between 1880 and 1920 -- a period when Scandinavia, and the rest of Europe, underwent a social, industrial and economic transformation. Were specific education types, academic performances and work experiences preferred? Did economic sectors and companies value social background, schools/universities, degrees, grades and previous work experiences differently?
+The aim of this project is to analyse the value placed upon social background, education, academic performance and work experience by employers in industry and business in Sweden, Denmark and Norway between 1880 and 1920 --- a period when Scandinavia, and the rest of Europe, underwent a social, industrial and economic transformation. Were specific education types, academic performances and work experiences preferred? Did economic sectors and companies value social background, schools/universities, degrees, grades and previous work experiences differently?
 
 This research is enabled by two sets of source materials:
 - _graduate biographies_ with individual-level information about family, place of birth, education and careers of entire high school, technical school and university-level graduate cohorts
