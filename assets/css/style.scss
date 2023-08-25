@@ -332,7 +332,7 @@ section {
   flex-grow: 2;
 }
 
-section p + ul:not(.projects, .bio, .research), section p + ol {
+section p + ul:not(.projects, .bio, .research, .boxes), section p + ol {
   margin-top: -20px;
 }
 section p em {
@@ -540,7 +540,7 @@ thead, tbody, tfoot {
 
 div.research {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-flow: row;
   justify-content: flex-start;
   align-items: flex-start;
