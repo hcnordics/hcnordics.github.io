@@ -3,6 +3,7 @@ title: "In the footsteps of Chalmers and Ørsted"
 subtitle: "The students of higher technical education in Sweden and Denmark, 1829–1929"
 layout: default
 members: [Ford]
+projects: [handelsbanken]
 cover: chalmers.png
 ---
 
