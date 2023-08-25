@@ -249,6 +249,11 @@ footer ul {
 footer ul li {
   flex: auto;
   margin: 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
 }
 footer::after {
   content: "";
@@ -258,13 +263,24 @@ footer::after {
   box-shadow: 0px 40px 50px -40px #00000080 inset;
   margin: 0px;
 }
+footer li > span {
+  display: block;
+}
+footer li > div:not(div:last-child, div:nth-last-child(2))::after {
+  content: ", ";
+  display: inline;
+}
+footer li > div:nth-last-child(2)::after {
+  content: " & ";
+  display: inline;
+}
 footer li.top {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
   align-items: center;
   justify-self: flex-end;
-  grid: 6px;
+  gap: 6px;
 }
 footer li.top a {
   display: block;

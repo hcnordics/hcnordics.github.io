@@ -139,11 +139,24 @@
       </section>
       <footer>
         <ul>
-          <li>Developed by <a href="https://www.nickford.com/">Nick Ford</a></li>
-        {% if site.github.is_project_page %}
-          <li>Maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></li>
-        {% endif %}
-          <li>Hosted on <a href="https://pages.github.com">GitHub Pages</a></li>
+          {% assign developers = site.team | where: "role", "Developer" | sort: "surname" %}
+          {% unless developers == empty %}
+            <li><span>Developed by</span>
+              {% for person in developers %}
+                {% if person.website != "" %}
+                  <div><a href="{{ person.website }}">{{ person.firstname }} {{ person.surname }}</a></div>
+                {% elsif person.github != "" %}
+                  <div><a href="https://www.github.com/{{ person.github }}">{{ person.firstname }} {{ person.surname }}</a></div>
+                {% else %}
+                  <div>{{ person.firstname }} {{ person.surname }}</div>
+                {% endif %}
+              {% endfor %}
+            </li>
+          {% endunless %}
+          {% if site.github.is_project_page %}
+            <li><span>Maintained by</span><a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></li>
+          {% endif %}
+          <li><span>>Hosted on</span><a href="https://pages.github.com">GitHub Pages</a></li>
           <li class="top"><a href="#top"></a></li>
         </ul>
       </footer>
