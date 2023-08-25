@@ -31,7 +31,7 @@ Each Markdown (.md) file includes basic instructions to generate the page. At a 
 - _members_: Lists the project team members that are assigned to the relevant item (eg. a research item). Individuals are identified by surname (or a username), separated by commas and included in square brackets (see below).
 - _projects_: Lists the project groups that a research item is attached to. Projects are identified by the filename "slug" (everything before the `.md` extension) for the relevant project. As with _members_ above, you can list multiple projects within square brackets.
 
-Only include those items that you need for the page. In many cases, _title: "INSERT TITLE HERE"_ and _layout: default_ will be sufficient.
+Only include those items that you need for the page. In many cases, `title: "INSERT TITLE HERE"` and `layout: default` will be sufficient.
 
 The instruction block starts and ends with three dashes:
 ```
