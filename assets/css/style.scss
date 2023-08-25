@@ -235,6 +235,14 @@ footer {
   font-size: var(--font-size--tiny);
   width: 100%;
 }
+
+footer > div {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
 footer ul {
   list-style: none;
   padding: 50px 30px 20px 30px;
@@ -274,15 +282,17 @@ footer li > div:nth-last-child(2)::after {
   content: " & ";
   display: inline;
 }
-footer li.top {
+
+footer div.footerlinks {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
   align-items: center;
-  justify-self: flex-end;
+  align-self: flex-end;
   gap: 6px;
+  height: 100%;
 }
-footer li.top a {
+footer div.footerlinks a {
   display: block;
   text-decoration: none;
   background: var(--light-alt);
@@ -293,10 +303,10 @@ footer li.top a {
   text-align: center;
   border-radius: 50%;
 }
-footer li.top :is(a:hover, a:focus) {
+footer div.footerlinks :is(a:hover, a:focus) {
   background: var(--link);
 }
-footer li.top a::before {
+footer div.footerlinks a::before {
   content: "\2191";
   display: inline;
 }
