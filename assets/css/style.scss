@@ -194,7 +194,7 @@ header li a:hover, header li a:focus {
   border: var(--border-width) solid var(--primary);
 }
 header li a.buttons {
-  background: url(../images/link.png) no-repeat;
+  background: url(../icons/link.ext) no-repeat;
   background-size: 15px !important;
   background-position-x: 7px !important;
   background-position-y: center !important;
@@ -203,16 +203,16 @@ header li a.buttons {
   height: auto;
 }
 header li a.ext {
-  background: url(../images/extlink.png) no-repeat;
+  background: url(../icons/link_ext.svg) no-repeat;
 }
 header li a.github {
-  background: url(../images/github.png) no-repeat;
+  background: url(../icons/github.svg) no-repeat;
 }
 header li a.home {
-  background: url(../images/home.png) no-repeat;
+  background: url(../icons/home.svg) no-repeat;
 }
 header li a.about {
-  background: url(../images/about.png) no-repeat;
+  background: url(../icons/about.svg) no-repeat;
 }
 header .sitetitle + p {
   font-size: var(--font-size--small);
@@ -315,7 +315,7 @@ footer div.footerlinks a.top::before {
   display: inline;
 }
 footer div.footerlinks a.github {
-  background-image: url(../images/github.png);
+  background-image: url(../icons/github.svg);
   background-blend-mode: screen;
 }
 
@@ -754,13 +754,13 @@ ul.bio li.buttons a:hover, ul.bio li.buttons a:focus {
   border: var(--border-width) solid var(--light);
 }
 ul.bio li.website a {
-  background-image: url(../images/link.png);
+  background-image: url(../icons/link.svg);
 }
 ul.bio li.twitter a {
-  background-image: url(../images/twitter.png);
+  background-image: url(../icons/twitter.svg);
 }
 ul.bio li.github a {
-  background-image: url(../images/github.png);
+  background-image: url(../icons/github.svg);
 }
 
 .grid {
