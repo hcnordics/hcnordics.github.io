@@ -772,7 +772,7 @@ ul.bio li.github a {
   column-gap: 30px;
 }
   
-@media print, screen and (max-width: 960px) {
+@media screen and (max-width: 960px), screen and (max-height: 800px) {
   header {
     width: 100%;
     margin: 0px;
@@ -874,10 +874,25 @@ ul.bio li.github a {
 
 }
 
-@media print, screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   section {
     max-width: 850px;
     padding: 30px 50px;
   }
   
+}
+
+@media print {
+  header, footer {
+    padding: 20px 0px;
+  }
+  header {
+    color: var(--dark);
+  }
+  section {
+    padding: 50px 0px;
+  }
+  footer::after, .footerlinks {
+    display: none;
+  }
 }
