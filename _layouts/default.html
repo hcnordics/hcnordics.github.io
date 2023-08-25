@@ -15,6 +15,7 @@
     {% include head-custom.html %}
   </head>
   <body>
+  <a id="top"></a>
   {% if page.cover %}
     <div class="wrapper cover"><div class="bgd" style="background-image: radial-gradient(ellipse at top left, transparent 50%, var(--secondary)), url({{ site.baseurl }}/assets/images/header/{{ page.cover | default: odense_k.png }})"></div>
   {% else %}
@@ -143,6 +144,7 @@
           <li>Maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></li>
         {% endif %}
           <li>Hosted on <a href="https://pages.github.com">GitHub Pages</a></li>
+          <li class="top"><a href="#top"></a></li>
         </ul>
       </footer>
     </div>

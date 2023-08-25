@@ -258,6 +258,32 @@ footer::after {
   box-shadow: 0px 40px 50px -40px #00000080 inset;
   margin: 0px;
 }
+footer li.top {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  justify-self: flex-end;
+  grid: 6px;
+}
+footer li.top a {
+  display: block;
+  text-decoration: none;
+  background: var(--light-alt);
+  color: var(--white);
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+footer li.top :is(a:hover, a:focus) {
+  background: var(--link);
+}
+footer li.top a::before {
+  content: "\2191";
+  display: inline;
+}
 
 section {
   display: flex;
