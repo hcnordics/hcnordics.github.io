@@ -442,8 +442,8 @@ small {
   height: max(3em, 50vh);
   background-size: cover;
   background-position: center center;
-  background-blend-mode: overlay;
-  background-color: var(--dark);
+  background-blend-mode: multiply;
+  background-color: var(--primary);
 }
 .wrapper.cover .bgd::before {
   content: "";
@@ -454,7 +454,7 @@ small {
   width: 100%;
   height: 100%;
   background: radial-gradient(ellipse at 75% 0%, var(--tertiary) 0%, var(--primary) 50%, transparent, var(--secondary) 100%);
-  mix-blend-mode: soft-light;
+  mix-blend-mode: color;
 }
 
 .wrapper.cover header {
@@ -628,7 +628,6 @@ ul.projects > li > a {
   border: var(--border-width) solid;
   border-radius: var(--border-curve);
   font-variation-settings: 'wdth' 75;
-  text-transform: capitalize;
 }
 ul.projects > li > :is(a:hover, a:focus) {
   color: var(--primary);
