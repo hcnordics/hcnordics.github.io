@@ -296,7 +296,7 @@ footer div.footerlinks {
 footer div.footerlinks a {
   display: block;
   text-decoration: none;
-  background: var(--light-alt);
+  background-color: var(--light-alt);
   color: var(--white);
   width: 20px;
   height: 20px;
@@ -307,12 +307,12 @@ footer div.footerlinks a {
 footer div.footerlinks :is(a:hover, a:focus) {
   background: var(--link);
 }
-footer div.footerlinks a::before {
+footer div.footerlinks a.top::before {
   content: "\2191";
   display: inline;
 }
 footer div.footerlinks a.github {
-  background: url(../images/github.png) no-repeat;
+  background-image: url(../images/github.png) no-repeat;
 }
 
 section {
