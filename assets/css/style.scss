@@ -888,11 +888,13 @@ ul.bio li.github a {
   }
   header {
     color: var(--dark);
+    position: relative;
+    box-shadow: unset;
   }
   section {
     padding: 50px 0px;
   }
-  footer::after, .footerlinks {
+  header > ul, footer::after, .footerlinks {
     display: none;
   }
 }
