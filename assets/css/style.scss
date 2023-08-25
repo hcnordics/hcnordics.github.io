@@ -297,7 +297,7 @@ footer div.footerlinks a {
   display: block;
   text-decoration: none;
   background-color: var(--light-alt);
-  background-size: contain;
+  background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
   color: var(--white);
@@ -308,7 +308,7 @@ footer div.footerlinks a {
   border-radius: 50%;
 }
 footer div.footerlinks :is(a:hover, a:focus) {
-  background: var(--link);
+  background-color: var(--link);
 }
 footer div.footerlinks a.top::before {
   content: "\2191";
