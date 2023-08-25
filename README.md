@@ -11,24 +11,27 @@ This brief guide to editing the website discusses:
 
 ## Folders and files
 The website's content is located in the main directory (where you are now), and the folders:
-- `_research` (containing the pages in the _Research_ category)
-- `_sources` (containing the pages in the _Sources_ category)  
+- `_projects` (containing pages for each project group)  
+- `_research` (containing pages for each individual piece of research)
+- `_sources` (containing pages that describe our source materials, and track progress relating to them).
 
 The other folders contain the nuts and bolts of the site and its design. Please only edit files in the folders listed above! 😊
 
 ### Editing and saving
 To edit the content of a website page, click on the relevant Markdown (.md) file here in GitHub, then find the pencil icon ("Edit this file"). This will open up the editor, where you can make changes to the page's text. When you are finished editing, scroll down and click on the green _Commit changes_ button: this will save the updated page content.
 
-Any changes you make to the site will not appear immediately. Rather, edits require the site to be recompiled, which may take a couple of minutes. You can follow the progress of any updates under the "Actions" tab in GitHub. Once the status indicator switches to a green tick ("This workflow run completed successfully"), you should be able to see your changes live on the relevant website page. Note that you may need to refresh the page.
+Any changes you make to the site will not appear immediately. Rather, edits require the site to be recompiled, which may take a few minutes. (Note that you may need to refresh the page.) You will be notified in the event of any compilation errors which prevent the changes from being adopted. 
 
 ### The instruction block
 Each Markdown (.md) file includes basic instructions to generate the page. At a minimum, this includes the page _title_ and _layout_ (usually "default"). Other prompts that can be included in the instruction block are:
 - _subtitle_: An extension of the page title. Particularly relevant for research items.
+- _shorttitle_: An abbreviated title that can be used where space is constrained. This is currently only used for project groups, where short titles are used in some site links.
 - _status_: An optional one-word descriptor for research items. Useful for noting that a paper is ["Completed"](https://hcnordics.github.io/research/rivista).
-- _cover_: Allows a cover image for the page title. Images must be saved in the assets/images directory. Contact Nick if there's a specific image you want to include!
-- _members_: Lists the project team members that are assigned to the relevant item (eg. a research item). Individuals are identified by surname (or a username), separated by commas and included in square brackets (see below).  
+- _cover_: Allows a cover image for the page title. Images must be saved in the `assets/images/header` directory. Contact Nick if there's a specific image you want to include!
+- _members_: Lists the project team members that are assigned to the relevant item (eg. a research item). Individuals are identified by surname (or a username), separated by commas and included in square brackets (see below).
+- _projects_: Lists the project groups that a research item is attached to. Projects are identified by the filename "slug" (everything before the `.md` extension) for the relevant project. As with _members_ above, you can list multiple projects within square brackets.
 
-Only include those items that you need for the page. In most cases _title: "INSERT TITLE HERE"_ and _layout: default_ will be sufficient.
+Only include those items that you need for the page. In many cases, `title: "INSERT TITLE HERE"` and `layout: default` will be sufficient.
 
 The instruction block starts and ends with three dashes:
 ```
@@ -98,14 +101,17 @@ Project team members are coded into the configuration file for the website (`_co
     firstname: ""
     position: ""
     institution: ""
-    role: ""
     website: ""
     twitter: ""
     github: ""
 ```
 (Note the dash before surname: this marks the start of an individual's entry.)
 
-At this stage, _role_ is not actively used on the website. All other values are used to populate the team member profile boxes that appear on the site -- for example, on the [About HCNC](https://hcnordics.github.io/about/) page. As noted above, _surname_ is the value used to identify team members where individuals are assigned to pages using the _members_ option in the instruction block. For cases where a surname is shared by multiple individuals, a _username_ field can also be included: just add an extra line below _firstname_ with `username: "NAME HERE"`. To avoid confusion, usernames should be entirely lower case (eg. "ford_n").
+The above values are used to populate the team member profile boxes that appear on the site -- for example, on the [About HCNC](https://hcnordics.github.io/about/) page.
+
+As noted above, _surname_ is the value used to identify team members where individuals are assigned to pages using the _members_ option in the instruction block. Alternatively -- and especially for cases where a surname is shared by multiple individuals -- a _username_ field can also be included: just add an extra line below _firstname_ with `username: "NAME HERE"`. To avoid confusion, usernames should be entirely lower case (eg. "ford_n").
+
+In addition, _role_ can also be included to define specific tasks. At this stage, _role_ is only used to denote those with responsibilities for managing this GitHub. 
 
 You are welcome to edit your own profile information, but otherwise avoid editing the configuration file, as this may "break" the website!
 
