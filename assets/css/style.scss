@@ -242,10 +242,8 @@ footer > div {
   justify-content: space-between;
   align-items: stretch;
   padding: 50px 30px 20px 30px;
-  background: var(--white);
   gap: 30px;
 }
-
 footer ul {
   list-style: none;
   padding: 0px;
@@ -470,6 +468,9 @@ small {
   margin: -30px;
   padding: 30px;
   flex-grow: 10;
+}
+.wrapper.cover footer > div {
+  background: var(--background);
 }
 
 .wrapper.cover .title {
