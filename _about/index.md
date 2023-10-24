@@ -1,7 +1,7 @@
 ---
 title: "About HCNC"
 layout: directory
-cover: BB2.png
+cover: aarhusk_1895.png
 members: ""
 ---
 
