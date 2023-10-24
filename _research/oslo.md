@@ -1,6 +1,6 @@
 ---
 title: "Lessons from Oslo"
-subtitle: "Examining social mobility after the establishment of Norway’s first university"
+subtitle: "National universities, access to higher education, and long-run development"
 layout: default
 members: [Ford, Ranestad, Sharp]
 ---

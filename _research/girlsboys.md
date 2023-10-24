@@ -1,7 +1,8 @@
 ---
 title: "Breaking barriers"
-subtitle: "Women in high school, 1882–1919"
+subtitle: "Discovering the historical roots of gender disparities in high school performance"
 layout: default
+cover: BB1.png
 members: [Ranestad, Ford, Sharp, Dahl, Westermann]
 projects: [handelsbanken]
 ---
