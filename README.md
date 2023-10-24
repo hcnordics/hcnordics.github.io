@@ -11,6 +11,7 @@ This brief guide to editing the website discusses:
 
 ## Folders and files
 The website's content is located in the main directory (where you are now), and the folders:
+- `_about` (containing pages which describe the HCNC project and define how it operates)
 - `_projects` (containing pages for each project group)  
 - `_research` (containing pages for each individual piece of research)
 - `_sources` (containing pages that describe our source materials, and track progress relating to them).

@@ -21,6 +21,10 @@ collections:
     output: true
     layout: default
     permalink: /sources/:name
+  about:
+    output: true
+    layout: default
+    permalink: /about/:name
 
 team:
   - surname: "Ford"
