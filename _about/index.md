@@ -13,6 +13,9 @@ Among other things, our analysis considers:
 - on the supply side, who received an education? How did the profile of graduates change as access to education expanded? Put another way, what was the effect of education on employment outcomes and social mobility?
 - on the demand side, what motivated employers’ choice of formally trained graduates rather than ‘raw’ labour that could be trained on the job? What did the increase in skilled labour mean for productivity at the firm- or industry-level?
 
+
+## More information
+
 <!-- ## Team
 
 The following people are members of our research team:-->
