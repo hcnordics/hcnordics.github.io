@@ -26,6 +26,9 @@ Note: Types can overlap, as each cohort can have multiple yearbooks (eg. books f
 
 ## Yearbooks by cohort
 
+> **Legend**: ● Full text biography ○ Summary table / short profiles
+> \* The Danish graduating classes of 1812 and 1837 were celebrated in a joint yearbook, marking their 50th and 25th anniversaries respectively.
+
 | Cohort | Denmark: 25 |   40   | 50  | 60  | Norway: 25 | 30  | 40  | 50  | 60  |
 | ------ | :---------: | :----: | :---: | :---: | :--------: | :---: | :---: | :---: | :---: |
 | 1812   |             |        | ○*  |     |            |     |     |     |     |
@@ -154,9 +157,6 @@ Note: Types can overlap, as each cohort can have multiple yearbooks (eg. books f
 | 1941   |             |        |     |     |     ●      |     |     |     |     |
 | 1942   |             |        |     |     |     ●      |     |     |     |     |
 | 1943   |             |        |     |     |     ●      |     |     |     |     |
-
-> \* The Danish graduating classes of 1812 and 1837 were celebrated in a joint yearbook, marking their 50th and 25th anniversaries respectively.
-
 
 ## Additional source material
 - Denmark/Norway
