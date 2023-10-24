@@ -26,7 +26,19 @@ Note: Types can overlap, as each cohort can have multiple yearbooks (eg. books f
 
 ## Yearbooks by cohort
 
-> **Legend**: ● Full text biography ○ Summary table / short profiles
+### Summary
+
+| Country        | 1810  | 1820  | 1830  | 1840  | 1850  | 1860  | 1870  | 1880  | 1890  | 1900  | 1910  | 1920  | 1930  | 1940  | 
+|:------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Norway**   |     |     | 1   |     | 7   | 9   | 10  | 10  | 10  | 10  | 10  | 10  | 10  | 4   |
+| **Denmark**  |     |     |     |     | 3   | 4   | 8   | 10  | 10  | 10  | 7   | 3   |     |     |
+| _Partial_    | 1   | 9   | 9   | 10  | 7   | 6   | 2   |     |     |     | 1   |     |     |     |
+
+> The earliest Danish yearbooks included only partial biographical information of graduates. The headline row for Denmark counts only full biographies; the 'Partial' row refers to the less detailed (though still relevant) tables and short text.
+
+### Detailed
+
+> **Legend**: ● Full text biography ○ Summary table / short text
 > \* The Danish graduating classes of 1812 and 1837 were celebrated in a joint yearbook, marking their 50th and 25th anniversaries respectively.
 
 | Cohort | Denmark: 25 |   40   | 50  | 60  | Norway: 25 | 30  | 40  | 50  | 60  |
