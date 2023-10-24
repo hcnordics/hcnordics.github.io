@@ -48,6 +48,10 @@ body, h1, .sitetitle, h2, h3, h4, h5, h6, th {
   font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+ol > li > ol {
+  list-style: lower-alpha;
+}
+
 a {
   color: var(--link);
   text-decoration: underline dotted var(--light-alt) 1px;
