@@ -1,5 +1,6 @@
 ---
 title: "Guidelines"
+layout: default
 members: [Dahl, Ranestad, Sharp, Sommerseth]
 ---
 

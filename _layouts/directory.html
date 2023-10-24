@@ -23,6 +23,19 @@ layout: default
 {% else %}
   <div class="grid">
     <div>
+      {% assign aboutlist = site.about %}
+      {% unless aboutlist == empty %}
+        <h2><a href="{{ site.baseurl }}/about">About HCNC</a></h2>
+        <ul>
+        {% for item in aboutlist %}
+        {% if item.slug == "index" %}
+        {% else %}
+        <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+      {% endunless %}
+
       {% assign projectslist = site.projects %}
       {% unless projectslist == empty %}
         <h2><a href="{{ site.baseurl }}/projects">Project groups</a></h2>

@@ -1,7 +1,7 @@
 ---
 title: "About HCNC"
 layout: directory
-cover: soroedrengene.png
+cover: BB2.png
 members: ""
 ---
 
