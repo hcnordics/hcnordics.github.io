@@ -75,6 +75,10 @@
           {% endif %}
 
           {% if page.members %}
+            {% if page.members == "" %}
+              <h2>Team</h2>
+              <p>The following people are members of our research team:</p>
+            {% endif %}
             {% assign team_members = site.team | sort: "surname" %}
             {% assign item_members = page.members %}
             <ul class="bio">
