@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 layout: directory
-cover: jessensskole.png
+cover: aarhusk_1895.png
 linkto: about
 ---
 
