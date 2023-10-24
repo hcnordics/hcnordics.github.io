@@ -154,7 +154,7 @@ Note: Types can overlap, as each cohort can have multiple yearbooks (eg. books f
 | 1941  |            |           |       |      | ●         |      |      |      |      |
 | 1942  |            |           |       |      | ●         |      |      |      |      |
 | 1943  |            |           |       |      | ●         |      |      |      |      |
-
+> \* The Danish graduating classes of 1812 and 1837 were celebrated in a joint yearbook, marking their 50th and 25th anniversaries respectively.
 
 
 ## Additional source material
