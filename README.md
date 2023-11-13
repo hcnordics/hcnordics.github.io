@@ -1,4 +1,4 @@
-# Human Capital in the Nordic Countries
+# Human Capital of the Nordic Countries
 This GitHub repository hosts files for the project website, and is intended for use only by project team members. The project website can be found at: https://hcnordics.github.io/
 
 # Editing the website
