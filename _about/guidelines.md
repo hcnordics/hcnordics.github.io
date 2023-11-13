@@ -22,6 +22,3 @@ Some simple guidelines for management of HCNC and co-authorship
 
 ## Attribution
 As a starting point, use of the Danish data should involve Christian Møller Dahl, Kristin Ranestad and Paul Sharp as co-authors; use of the Norwegian data should involve the same plus Hilde Sommerseth. However, these individuals may choose not to be co-authors or suggest others from the team who can be co-authors together with them, or instead of them.
-
-## Standard text for crediting
-We would like to thank the Carlsberg Foundation (project no. CF19-0225), Jan Wallanders och Tom Hedelius stiftelse (project no. P20-0030), the Research Council of Norway (project no. xxx) and the Danish National Research Council (project no. yyy) for generous research funding, without which this work would not have been possible. We would also like to thank partners at the Digital Cultural Heritage and Media section of the Royal Library in Copenhagen; Link-Lives at the Danish National Archives; and the Norwegian Historical Data Centre at, UiT The Arctic University of Norway for their collaboration when creating the database, their advice and their support.
