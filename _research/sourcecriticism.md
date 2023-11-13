@@ -11,3 +11,5 @@ projects: [handelsbanken]
 > _-Norwegian Class of 1926 yearbook_
 
 Human capital is a central concept in economics, economic history, and other fields, but it is often measured using simple measures such as literacy and years of schooling. Unique sources from Denmark and Norway offer the potential to construct a far more comprehensive measure. From the early nineteenth century until after the Second World War, these countries had the tradition of publishing biographies of all high school graduates, usually 25 and 50 years after graduation, containing information on their entire careers, including places worked, travels, achievements, publications, and more. We discuss the sources and their potential for furthering our understanding of the role of human capital for development. Extensive source criticism reveals both strengths and weaknesses, but most importantly confirms that such biographical information can offer promising perspectives towards furthering our understanding of the concept of human capital, and its role in society.
+
+This is now available as a working paper at the [European Historical Economics Society](https://ehes.org/wp/EHES_242.pdf).
