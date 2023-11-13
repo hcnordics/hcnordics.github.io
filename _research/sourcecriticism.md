@@ -2,7 +2,7 @@
 title: "Not the best at filling in forms?"
 subtitle: "The Danish and Norwegian graduate biographies as a source for measuring human capital"
 layout: default
-members: [Ranestad, Ford, Sharp]
+members: [Ford, Ranestad, Sharp]
 projects: [handelsbanken]
 ---
 
