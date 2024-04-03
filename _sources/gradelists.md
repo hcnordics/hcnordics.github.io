@@ -7,6 +7,9 @@ layout: default
 - High school (HS): enrolment records (*studentermatrikel*/*studentmatrikkel*), admissions/graduation exams (*examen artium*)
 - University (Uni): degree/grades (*embedseksamen*)
 
+## Data
+[OneDrive folder](https://syddanskuni-my.sharepoint.com/:f:/r/personal/cniel_sam_sdu_dk/Documents/HCNC%20Data?csf=1&web=1&e=zb5LfI)
+
 ## Progress tracker
 
 | Country | Type | Years | HS | Uni | Transcribed | Linked |
