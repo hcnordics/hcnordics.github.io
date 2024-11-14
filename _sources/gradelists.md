@@ -27,6 +27,30 @@ layout: default
 | DK | Exams | 1850-1864 | Y | Y | Auto |In progress |
 | DK | Exams | 1864-1920 | Y | Y | | |
 
+## Transcribtion progress
+
+## Progress tracker
+
+|   | 1760 | 1770 | 1780 | 1790 | 1800 | 1810 | 1820 | 1830 | 1840 | 1850 | 1860 | 1870 | 1880 | 1890 | 1900 | 1910 | 
+|---|---|---|---|---|---|---|
+| 00 | C | C | C | C | TU | TC | TC | TC | TC | TC | TC | TC | TC | TC | TC | TU | SA |
+| 01 | C | C | C | C | TU | TC | TC | TC | TC | TC | TC | TC | TC | C | TC | TU | NS |
+| 02 | C | C | C | TC | SA | TC | TC | C | TC | TC | TC | TC | TC | TC | TC | C | NS |
+| 03 | C | C | C | TC | SA | TC | TC | TC | TC | TC | TC | TC | TC | TC | TC | C | NS |
+| 04 | C | C | C | TC | SA | C | TC | C | TC | TC | TC | TC | TC | TC | TC | SA | NS |
+| 05 | C | C | C | TC | C | TC | TC | C | TC | TC | TC | TC | TC | TC | TU | C | NS |
+| 06 | C | C | C | TC | C | C | TC | C | TC | TC | TC | TC | TC | TC | TU | C | NS |
+| 07 | C | C | C | TC | C | TC | TC | C | TC | TC | C | TC | TC | TC | TU | C | NS |
+| 08 | C | C | C | TC | C | C | TC | TC | TC | TC | TC | TC | TC | C | TU | C | NS |
+| 09 | C | C | C | TC | C | C | TC | TC | TC | TC | TC | TC | TC | TU | TU | C | NS |
+
+> - C (Completed): Data completed and ready for use
+> - TC (Transcribed, checked): Data is partially transcribed and checked for errors, with a few missing grades.
+> - TU (Transcribed, unchecked): Data is partially transcribed but not checked for errors.
+> - SA (Source available): A grade list is available but it hasn't been transcribed yet.
+> - NS (No source): No grade list is available.
+
+
 ## Detailed content list
 
 ---
