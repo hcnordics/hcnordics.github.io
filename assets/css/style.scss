@@ -48,6 +48,12 @@ body, header, section, footer {
 body, h1, .sitetitle, h2, h3, h4, h5, h6, th {
   font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+h1, .sitetitle, h2, h3, h4, h5, h6, th, footer {
+  line-height: 1.1;
+}
+.sitetitle + p {
+  line-height: 1.5;
+}
 
 ol > li > ol {
   list-style: lower-alpha;
