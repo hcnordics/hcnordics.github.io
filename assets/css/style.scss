@@ -30,14 +30,16 @@
   --border-curve: 4px;
   --border-width: 2px;
   --border-cap: 6px;
-  --font--line-height: 1.8;
+  --font--line-height--text: 1.8;
+  --font--line-height--tight: 1.1;
+  --font--line-height: 1.4;
 }  
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-size: var(--font-size--normal);
-  line-height: var(--font--line-height);
+  line-height: var(--font--line-height--text);
   padding: 0px;
   min-height: 100vh;
 }
@@ -49,10 +51,10 @@ body, h1, .sitetitle, h2, h3, h4, h5, h6, th {
   font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h1, .sitetitle, h2, h3, h4, h5, h6, th, footer {
-  line-height: 1.1;
+  line-height: var(--font--line-height--tight);
 }
 .sitetitle + p {
-  line-height: 1.5;
+  line-height: var(--font--line-height);
 }
 
 ol > li > ol {
@@ -150,7 +152,7 @@ h3 {
   color: var(--contrast);
   margin: 10px 0px 0px 0px;
   display: block;
-  line-height: 1.5em;
+  line-height: var(--font--line-height--tight);
 }
 
 .title, .content {
@@ -331,7 +333,7 @@ footer div.footerlinks a.github {
 section {
   display: flex;
   flex-direction: column;
-  line-height: var(--font--line-height);
+  line-height: var(--font--line-height--text);
   max-width: 1200px;
   min-height: 100%;
   width: 100%;
@@ -607,6 +609,7 @@ div.research ul > li:last-child {
 div:is(.grid, .research) ul > li > a {
   display: block;
   font-size: var(--font-size--normal);
+  line-height: var(--font--line-height--tight);
   text-decoration: none;
   font-weight: 500;
 }
