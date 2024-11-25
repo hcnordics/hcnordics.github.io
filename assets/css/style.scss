@@ -30,13 +30,14 @@
   --border-curve: 4px;
   --border-width: 2px;
   --border-cap: 6px;
+  --font--line-height: 1.5;
 }  
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-size: var(--font-size--normal);
-  line-height: initial;
+  line-height: var(--font--line-height);
   padding: 0px;
   min-height: 100vh;
 }
@@ -108,7 +109,7 @@ h2 a::after, h2 a::after, h2 a::after {
   display: block;
   float: right;
   font-size: 120%;
-  line-height: 1em;
+  line-height: 1;
 }
 h2 a:hover, h2 a:focus {
   text-decoration: none;
@@ -303,8 +304,8 @@ footer div.footerlinks a {
   background-position: center;
   background-repeat: no-repeat;
   color: var(--white);
-  width: 22px;
-  height: 22px;
+  width: 1lh;
+  height: 1lh;
   line-height: 22px;
   text-align: center;
   border-radius: 50%;
@@ -324,7 +325,7 @@ footer div.footerlinks a.github {
 section {
   display: flex;
   flex-direction: column;
-  line-height: 1.8em;
+  line-height: var(--font--line-height);
   max-width: 1200px;
   min-height: 100%;
   width: 100%;
@@ -400,7 +401,7 @@ small {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
-  line-height: 1em;
+  line-height: 1;
 }
 .strap a, .strap span {
   display: inline-block;
@@ -619,7 +620,7 @@ ul.projects {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  line-height: 1em;
+  line-height: 1;
 }
 ul.projects::before {
   content: "Related";
@@ -656,7 +657,7 @@ ul:is(.bio, .boxes) {
   align-content: flex-start;
   align-items: stretch;
   list-style: none;
-  line-height: 1.8rem;
+  line-height: var(--font--line-height);
 }
 ul.bio > li {
   flex: auto;
@@ -703,7 +704,7 @@ ul.boxes > li.completed > a::after {
   text-transform: capitalize;
   border-radius: var(--border-curve);
   font-variation-settings: 'wdth' 75;
-  line-height: 1em;
+  line-height: 1;
 }
 ul.bio > li > span,
 ul.boxes > li > a > span {
@@ -711,7 +712,7 @@ ul.boxes > li > a > span {
   font-variation-settings: 'wdth' 75;
   font-size: var(--font-size--medium);
   font-weight: 500;
-  line-height: 1em;
+  line-height: 1;
   margin-bottom: 20px;
 }
 ul.boxes > li > a > span {
@@ -742,12 +743,12 @@ ul.bio > li > ul > li {
   padding: 0px;
   margin: 5px 0px;
   display: block;
-  line-height: 1.5em;
+  line-height: var(--font--line-height);
 }
 ul.bio li.buttons {
   display: inline-block;
   margin: 10px 3px 0px 0px;
-  line-height: 1em;
+  line-height: 1;
 }
 ul.bio li.buttons a {
   text-decoration: none;
