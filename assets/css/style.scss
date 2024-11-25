@@ -152,7 +152,7 @@ h3 {
   color: var(--contrast);
   margin: 10px 0px 0px 0px;
   display: block;
-  line-height: var(--font--line-height--tight);
+  line-height: var(--font--line-height);
 }
 
 .title, .content {
@@ -609,7 +609,7 @@ div.research ul > li:last-child {
 div:is(.grid, .research) ul > li > a {
   display: block;
   font-size: var(--font-size--normal);
-  line-height: var(--font--line-height--tight);
+  line-height: var(--font--line-height);
   text-decoration: none;
   font-weight: 500;
 }
