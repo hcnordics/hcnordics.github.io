@@ -594,7 +594,7 @@ div:is(.grid, .research) ul > li {
   padding: 6px 0px;
   border-bottom: 1px dotted var(--light);
   font-size: var(--font-size--small);
-  line-height: var(--font--line-height);
+  line-height: var(--font--line-height--text);
 }
 div:is(.grid, .research) ul > li:first-child {
   padding-top: 0px;
@@ -613,6 +613,7 @@ div.research ul > li:last-child {
 div:is(.grid, .research) ul > li > a {
   display: block;
   font-size: var(--font-size--normal);
+  line-height: var(--font--line-height);
   text-decoration: none;
   font-weight: 500;
 }
