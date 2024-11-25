@@ -585,7 +585,7 @@ div.research > h2 {
 }
 div:is(.grid, .research) ul {
   list-style: none;
-  line-height: var(--font--line-height);
+  line-height: var(--font--line-height--text);
   padding: 0px;
 }
 div:is(.grid, .research) ul > li {
