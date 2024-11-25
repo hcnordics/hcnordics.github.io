@@ -50,7 +50,7 @@ body, header, section, footer {
 body, h1, .sitetitle, h2, h3, h4, h5, h6, th {
   font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-h1, .sitetitle, h2, h3, h4, h5, h6, th, footer {
+h1, .sitetitle, .subtitle, h2, h3, h4, h5, h6, th, footer {
   line-height: var(--font--line-height--tight);
 }
 .sitetitle + p {
@@ -585,6 +585,7 @@ div.research > h2 {
 }
 div:is(.grid, .research) ul {
   list-style: none;
+  line-height: var(--font--line-height);
   padding: 0px;
 }
 div:is(.grid, .research) ul > li {
