@@ -588,6 +588,9 @@ div:is(.grid, .research) ul {
   padding: 0px;
 }
 div:is(.grid, .research) ul > li {
+  display: flex;
+  flex-flow: column;
+  gap: 6px;
   padding: 6px 0px;
   border-bottom: 1px dotted var(--light);
   font-size: var(--font-size--small);
