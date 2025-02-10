@@ -8,7 +8,7 @@ layout: default
 - University (Uni): degree/grades (*embedseksamen*)
 
 ## Data
-[OneDrive folder](https://syddanskuni-my.sharepoint.com/:f:/r/personal/cniel_sam_sdu_dk/Documents/HCNC%20Data?csf=1&web=1&e=zb5LfI)
+[Data on Zenodo](https://zenodo.org/communities/hcnc/records?q=&l=list&p=1&s=10&sort=newest)
 
 ## Progress tracker
 
