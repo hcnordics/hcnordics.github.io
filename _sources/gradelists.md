@@ -36,11 +36,11 @@ layout: default
 | 02 | C | C | C | C | SA | C | C | C | C | C | C | TC | TC | TC | TC | C | NS |
 | 03 | C | C | C | C | SA | C | C | C | C | C | C | TC | TC | TC | TC | C | NS |
 | 04 | C | C | C | C | SA | C | C | C | C | C | C | TC | TC | TC | TC | SA | NS |
-| 05 | C | C | C | C | C | C | C | C | C | C | C | TC | TC | TC | TU | C | NS |
-| 06 | C | C | C | C | C | C | C | C | C | C | C | TC | TC | TC | TU | C | NS |
-| 07 | C | C | C | C | C | C | C | C | C | C | C | TC | TC | TC | TU | C | NS |
-| 08 | C | C | C | C | C | C | C | C | C | C | C | TC | TC | C | TU | C | NS |
-| 09 | C | C | C | C | C | C | C | C | C | C | C | TC | TC | TU | TU | C | NS |
+| 05 | C | C | C | C | C | C | C | C | C | SA | C | TC | TC | TC | TU | C | NS |
+| 06 | C | C | C | C | C | C | C | C | C | SA | C | TC | TC | TC | TU | C | NS |
+| 07 | C | C | C | C | C | C | C | C | C | SA | C | TC | TC | TC | TU | C | NS |
+| 08 | C | C | C | C | C | C | C | C | C | SA | C | TC | TC | C | TU | C | NS |
+| 09 | C | C | C | C | C | C | C | C | C | SA | C | TC | TC | TU | TU | C | NS |
 
 > - C (Completed): Data completed and ready for use
 > - TC (Transcribed, checked): Data is partially transcribed and checked for errors, with a few missing grades.
