@@ -494,6 +494,45 @@ table+blockquote {
     border-bottom: var(--border-width) solid var(--tertiary);
 }
 
+/* Index */
+div.grid {
+    grid-column: 2/-2;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+
+    @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    > div {
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+    }
+
+    h2, h3 {
+        a:not(:hover, :focus) {
+            text-decoration-color: #00000000;
+            text-underline-offset: 1rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        gap: 0.5rem;
+
+        li {
+            padding-left: 0px;
+        }
+    }
+
+}
+
 /* Cards */
 
 ul:is(.bio, .boxes) {
@@ -506,6 +545,11 @@ ul:is(.bio, .boxes) {
     align-items: stretch;
     list-style: none;
     line-height: var(--font--line-height);
+    margin-top: 2rem;
+
+    &:has(+ ul:is(.bio, .boxes)) {
+        margin-top: 1rem;
+    }
 
     &:has(> li:nth-child(2)) {
         grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
