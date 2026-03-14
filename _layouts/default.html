@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+<html lang="{{ site.lang | default: 'en-GB' }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/svg+xml" href="{{ site.baseurl }}/assets/favicon.svg">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -16,32 +16,22 @@
   </head>
   <body>
   <a id="top"></a>
-  {% if page.cover %}
+  <!--{% if page.cover %}
     <div class="wrapper cover"><div class="bgd" style="background-image: radial-gradient(ellipse at top left, transparent 50%, var(--secondary)), url({{ site.baseurl }}/assets/images/header/{{ page.cover | default: odense_k.png }})"></div>
   {% else %}
     <div class="wrapper">
-  {% endif %}
+  {% endif %}-->
       <header>
-        <div class="sitetitle"><a href="{{ site.url }}{{ site.baseurl }}">{{ site.title | default: site.github.repository_name }}</a></div>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
+        <a class="brand" href="{{ site.url }}{{ site.baseurl }}" title="{{ site.title | default: site.github.repository_name }}">HCNC</a>
         <ul>
-          {% if site.show_downloads %}
-            <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
-            <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
-          {% endif %}
-          
-          {% if page.linkto == "about" %}
-            <li><a class="buttons about" href="{{ site.baseurl }}/about">About HCNC</a></li>
-          {% else %}
-            <li><a class="buttons home" href="{{ site.url }}{{ site.baseurl }}">Home</a></li>
-          {% endif %}
-          <li><a class="buttons github" href="{{ site.github.repository_url }}">View on GitHub</a></li>
+          <li><a href="{{ site.baseurl }}/about">About</a></li>
+          <li><a href="https://zenodo.org/communities/hcnc/records?q=&l=list&p=1&s=10" target="_blank">Data</a></li>
+          <li><a href="{{ site.github.repository_url }}" target="_blank">GitHub</a></li>
         </ul>
       </header>
-
-      <section>
+      <main>
         <div class="title">
+          <div class="brand">{{ site.title | default: site.github.repository_name }}</div>
           {% if page.collection and page.slug != "index" %}
             <div class="strap">
               <a href="{{ site.baseurl }}/{{ page.collection }}/">{{ page.collection }}</a>
@@ -53,7 +43,8 @@
             <p class="subtitle">{{ page.subtitle }}</p>
           {% endif %}
         </div>
-        <div class="content">
+
+        <section>
           {{ content }}
 
 
@@ -77,7 +68,7 @@
           {% if page.members %}
             {% if page.members == "" %}
               <h2>Team</h2>
-              <p>The following people are members of our research team:</p>
+              <p>Meet the people working on the HCNC project.</p>
             {% endif %}
             {% assign team_members = site.team | sort: "surname" %}
             {% assign item_members = page.members %}
@@ -85,12 +76,14 @@
               {% if page.members != "" %}
                 {% for item_member in item_members %}
                   {% for team_member in team_members %}
+                    {% assign weblinks = team_member.website | default: "" %}
                     {% if team_member.username == item_member %}
                     <li><span>{{ team_member.firstname }} <span>{{ team_member.surname }}</span></span>
                       <ul>
                         <li>{{ team_member.position }}</li>
                         <li>{{ team_member.institution }}</li>
-                        {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
+                        {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
+                        {% if team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
                         {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
                         {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
                       </ul>
@@ -100,7 +93,8 @@
                       <ul>
                         <li>{{ team_member.position }}</li>
                         <li>{{ team_member.institution }}</li>
-                        {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
+                        {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
+                        {% if team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
                         {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
                         {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
                       </ul>
@@ -114,7 +108,8 @@
                     <ul>
                       <li>{{ team_member.position }}</li>
                       <li>{{ team_member.institution }}</li>
-                      {% if team_member.website != "" %}<li class="buttons website"><a href="{{ team_member.website }}" title="Website"></a></li>{% endif %}
+                      {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
+                      {% if team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
                       {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
                       {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
                     </ul>
@@ -148,47 +143,17 @@
             </ul>
           {% endif %}
 
-        </div>
-      </section>
+        </section>
+      </main>
       <footer>
-        <div>
-          <ul>
-            {% assign developers = site.team | where: "role", "Developer" | sort: "surname" %}
-            {% unless developers == empty %}
-              <li><span>Developed by</span>
-                {% for person in developers %}
-                  {% if person.website != "" %}
-                    <div><a href="{{ person.website }}">{{ person.firstname }} {{ person.surname }}</a></div>
-                  {% elsif person.github != "" %}
-                    <div><a href="https://www.github.com/{{ person.github }}">{{ person.firstname }} {{ person.surname }}</a></div>
-                  {% else %}
-                    <div>{{ person.firstname }} {{ person.surname }}</div>
-                  {% endif %}
-                {% endfor %}
-              </li>
-            {% endunless %}
-            {% assign contacts = site.team | where: "role", "Contact" | sort: "surname" %}
-            {% unless contacts == empty %}
-              <li><span>Maintained by</span>
-                {% for person in contacts %}
-                  {% if person.website != "" %}
-                    <div><a href="{{ person.website }}">{{ person.firstname }} {{ person.surname }}</a></div>
-                  {% elsif person.github != "" %}
-                    <div><a href="https://www.github.com/{{ person.github }}">{{ person.firstname }} {{ person.surname }}</a></div>
-                  {% else %}
-                    <div>{{ person.firstname }} {{ person.surname }}</div>
-                  {% endif %}
-                {% endfor %}
-              </li>
-            {% endunless %}
-            <li><span>Hosted on</span><a href="https://pages.github.com">GitHub Pages</a></li>
-          </ul>
-          <div class="footerlinks">
-            <a href="{{ site.github.repository_url }}" class = "github" title = "View on GitHub"></a>
-            <a href="#top" class = "top" title = "Back to top"></a>
-          </div>
-        </div>
-      </footer>
+        <ul>
+          <li class="sdu"><a href="https://www.sdu.dk" title="University of Southern Denmark"></a></li>
+          <li class="uio"><a href="https://www.uio.no" title="University of Oslo"></a></li>
+          <li class="uit"><a href="https://www.uit.no" title="UiT The Arctic University of Norway"></a></li>
+          <li class="tu"><a href="https://www.tu-dortmund.de" title="TU Dortmund University"></a></li>
+        </ul>
+        <a href="#top" class="back-to-top" title="Back to top"></a>
+    </footer>
     </div>
     
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
