@@ -7,8 +7,7 @@ layout: default
 - High school (HS): enrolment records (*studentermatrikel*/*studentmatrikkel*), admissions/graduation exams (*examen artium*)
 - University (Uni): degree/grades (*embedseksamen*)
 
-## Data
-[Data on Zenodo](https://zenodo.org/communities/hcnc/records?q=&l=list&p=1&s=10&sort=newest)
+<a href = "https://zenodo.org/communities/hcnc/records?q=&l=list&p=1&s=10&sort=newest" class="cta">Access the data</a>
 
 ## Progress tracker
 

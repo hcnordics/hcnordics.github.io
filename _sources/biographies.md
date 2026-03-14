@@ -12,8 +12,8 @@ Yearbooks by high school cohort:
 
 Note: Types can overlap, as each cohort can have multiple yearbooks (eg. books for 25th and 40th anniversary reunions). Yearbooks published later were typically more detailed (biographies rather than short text or tables).
 
-## Data
-[OneDrive folder](https://syddanskuni-my.sharepoint.com/:f:/r/personal/cniel_sam_sdu_dk/Documents/HCNC%20Data?csf=1&web=1&e=zb5LfI)
+<!--## Data
+[OneDrive folder](https://syddanskuni-my.sharepoint.com/:f:/r/personal/cniel_sam_sdu_dk/Documents/HCNC%20Data?csf=1&web=1&e=zb5LfI)-->
 
 
 ## Progress tracker

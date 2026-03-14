@@ -4,7 +4,6 @@ layout: default
 members: [Sommerseth, Ranestad, Boberg-Fazlic]
 ---
 
----
 > Project group pages are still under development.
 
 The project group seeks to investigate the long-term effects of the enhetsskole (unified school) in Denmark and Norway on important societal outcomes such as social mobility and equal oppurtunities.
