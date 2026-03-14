@@ -30,7 +30,7 @@ team:
   - surname: "Ford"
     firstname: "Nick"
     username: "ford_n"
-    position: "Postdoc"
+    position: "Assistant Professor"
     institution: "University of Southern Denmark"
     role: "Developer"
     website: 
@@ -50,7 +50,7 @@ team:
     github: ""
   - surname: "Ranestad"
     firstname: "Kristin"
-    position: "Associate Professor"
+    position: "Professor"
     institution: "University of Oslo"
     role: ""
     website: 

@@ -58,6 +58,7 @@ body {
 
 a {
     transition: all 0.2s ease;
+    color: inherit;
     text-decoration-color: rgba(from currentColor r g b / 0.25);
     text-decoration-thickness: 0.15em;
     text-underline-offset: 0.15em;
@@ -304,7 +305,7 @@ main {
             grid-column: 2/-2;
         }
 
-        :where(ul, ol):not[class] {
+        :where(ul, ol):not([class]) {
             > li {
                 margin-left: 1rem;
             }
