@@ -1,6 +1,6 @@
 ---
-title: "Not the best at filling in forms?"
-subtitle: "The Danish and Norwegian graduate biographies as a source for measuring human capital"
+title: "Assessing the educational elite"
+subtitle: "Evaluating the Danish and Norwegian high school yearbook tradition"
 layout: default
 members: [Ford, Ranestad, Sharp]
 projects: [handelsbanken]
@@ -12,4 +12,4 @@ projects: [handelsbanken]
 
 Human capital is a central concept in economics, economic history, and other fields, but it is often measured using simple measures such as literacy and years of schooling. Unique sources from Denmark and Norway offer the potential to construct a far more comprehensive measure. From the early nineteenth century until after the Second World War, these countries had the tradition of publishing biographies of all high school graduates, usually 25 and 50 years after graduation, containing information on their entire careers, including places worked, travels, achievements, publications, and more. We discuss the sources and their potential for furthering our understanding of the role of human capital for development. Extensive source criticism reveals both strengths and weaknesses, but most importantly confirms that such biographical information can offer promising perspectives towards furthering our understanding of the concept of human capital, and its role in society.
 
-This is now available as a working paper at the [European Historical Economics Society](https://ehes.org/wp/EHES_242.pdf).
+This paper is published in [_History of Education_](https://doi.org/10.1080/0046760X.2025.2595199). An earlier draft is available as a working paper at the [European Historical Economics Society](https://ehes.org/wp/EHES_242.pdf).

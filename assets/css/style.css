@@ -306,7 +306,7 @@ main {
         }
 
         :where(ul, ol):not([class]) {
-            > li {
+            li {
                 margin-left: 1rem;
             }
         }
