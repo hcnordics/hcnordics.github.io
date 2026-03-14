@@ -1,8 +1,8 @@
-@import "css/normalise.css";
+@import "normalise.css";
 
 @font-face {
     font-family: Archivo;
-    src: url(fonts/Archivo-Var.woff2);
+    src: url(../fonts/Archivo-Var.woff2);
 }
 
 @font-face {
