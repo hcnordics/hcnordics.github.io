@@ -33,7 +33,8 @@ team:
     position: "Postdoc"
     institution: "University of Southern Denmark"
     role: "Developer"
-    website: "https://www.nickford.com"
+    website: 
+    - "https://www.nickford.com"
     twitter: ""
     github: "nickforddk"
   - surname: "Sharp"
@@ -41,7 +42,8 @@ team:
     position: "Professor"
     institution: "University of Southern Denmark"
     role: ""
-    website: "http://www.keynes.dk"
+    website: 
+    - "http://www.keynes.dk"
     twitter: "paulsharpechist"
     github: ""
   - surname: "Ranestad"
@@ -49,7 +51,8 @@ team:
     position: "Associate Professor"
     institution: "University of Oslo"
     role: ""
-    website: "https://www.hf.uio.no/iakh/english/people/aca/history/tenured/krisrane/index.html"
+    website: 
+    - "https://www.hf.uio.no/iakh/english/people/aca/history/tenured/krisrane/index.html"
     twitter: "KristinRanestad"
     github: ""
   - surname: "Dahl"
@@ -57,7 +60,8 @@ team:
     position: "Professor"
     institution: "University of Southern Denmark"
     role: ""
-    website: "https://portal.findresearcher.sdu.dk/en/persons/christian-møller-dahl"
+    website: 
+    - "https://portal.findresearcher.sdu.dk/en/persons/christian-møller-dahl"
     twitter: "ChristianMDahl1"
     github: ""
   - surname: "Sommerseth"
