@@ -303,6 +303,12 @@ main {
         >table+blockquote {
             grid-column: 2/-2;
         }
+
+        :where(ul, ol):not[class] {
+            > li {
+                margin-left: 1rem;
+            }
+        }
     }
 
     div.title {
@@ -492,13 +498,17 @@ table+blockquote {
 ul:is(.bio, .boxes) {
     padding: 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(2, minmax(14rem, 1fr));
     grid-gap: 1rem;
     justify-content: space-between;
     align-content: flex-start;
     align-items: stretch;
     list-style: none;
     line-height: var(--font--line-height);
+
+    &:has(> li:nth-child(2)) {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    }
 }
 
 ul.bio>li>span,
