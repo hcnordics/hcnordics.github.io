@@ -2,6 +2,7 @@
 title: "Assessing the educational elite"
 subtitle: "Evaluating the Danish and Norwegian high school yearbook tradition"
 layout: default
+status: completed
 members: [Ford, Ranestad, Sharp]
 projects: [handelsbanken]
 ---
