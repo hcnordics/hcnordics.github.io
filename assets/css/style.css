@@ -538,7 +538,7 @@ div.grid {
             }
             &:hover, &:focus {
                 color: var(--primary);
-                text-decoration-color: var(--secondary);
+                text-decoration-color: var(--tertiary-alt);
             }
         }
     }
@@ -555,6 +555,19 @@ div.grid {
 
         li {
             margin-left: 0px;
+            display: flex;
+            flex-flow: column;
+            gap: 0.25rem;
+            color: var(--tertiary-alt);
+
+            > a {
+                font-weight: 500;
+                color: light-dark(var(--dark), var(--light));
+
+                &:hover, &:focus {
+                    color: light-dark(var(--black), var(--white));
+                }
+            }
         }
     }
 
