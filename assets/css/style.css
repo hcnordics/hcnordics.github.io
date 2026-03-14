@@ -60,12 +60,12 @@ a {
     transition: all 0.2s ease;
     color: inherit;
     text-decoration-color: rgba(from currentColor r g b / 0.25);
-    text-decoration-thickness: 0.15em;
-    text-underline-offset: 0.15em;
+    text-decoration-thickness: min(0.15em, 0.15rem);
+    text-underline-offset: min(0.15em, 0.15rem);
 
     &:hover {
         text-decoration-color: currentColor;
-        text-underline-offset: 0.15em !important;
+        text-underline-offset: min(0.15em, 0.15rem) !important;
     }
 
     &.cta {
@@ -535,6 +535,10 @@ div.grid {
             &:not(:hover, :focus) {
                 text-decoration-color: #00000000;
                 text-underline-offset: 1rem;
+            }
+            &:hover, &:focus {
+                color: var(--primary);
+                text-decoration-color: var(--secondary);
             }
         }
     }
