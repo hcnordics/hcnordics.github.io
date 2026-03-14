@@ -520,6 +520,10 @@ div.grid {
         }
     }
 
+    h3 {
+        margin-top: 1rem;
+    }
+
     ul {
         list-style: none;
         display: flex;
@@ -527,7 +531,7 @@ div.grid {
         gap: 0.5rem;
 
         li {
-            padding-left: 0px;
+            margin-left: 0px;
         }
     }
 
