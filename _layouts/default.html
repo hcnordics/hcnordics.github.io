@@ -76,16 +76,20 @@
               {% if page.members != "" %}
                 {% for item_member in item_members %}
                   {% for team_member in team_members %}
-                    {% assign weblinks = team_member.website | default: "" %}
+                    {% if team_member.website %}
+                      {% assign weblinks = team_member.website | default: "" %}
+                    {% else %}
+                      {% assign weblinks = "" %}
+                    {% endif %}
                     {% if team_member.username == item_member %}
                     <li><span>{{ team_member.firstname }} <span>{{ team_member.surname }}</span></span>
                       <ul>
                         <li>{{ team_member.position }}</li>
                         <li>{{ team_member.institution }}</li>
-                        {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
-                        {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
-                        {% if team_member.twitter and team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
-                        {% if team_member.github and team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
+                        {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" target="_blank" title="Website"></a></li>{% endfor %}
+                        {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" target="_blank" title="Bluesky"></a></li>{% endif %}
+                        {% if team_member.twitter and team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" target="_blank" title="X"></a></li>{% endif %}
+                        {% if team_member.github and team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" target="_blank" title="GitHub"></a></li>{% endif %}
                       </ul>
                     </li>
                     {% elsif team_member.surname == item_member %}
@@ -93,9 +97,9 @@
                       <ul>
                         <li>{{ team_member.position }}</li>
                         <li>{{ team_member.institution }}</li>
-                        {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
-                        {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
-                        {% if team_member.twitter and team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
+                        {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" target="_blank" title="Website"></a></li>{% endfor %}
+                        {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" target="_blank" title="Bluesky"></a></li>{% endif %}
+                        {% if team_member.twitter and team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" target="_blank" title="X"></a></li>{% endif %}
                         {% if team_member.github and team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
                       </ul>
                     </li>
@@ -108,10 +112,10 @@
                     <ul>
                       <li>{{ team_member.position }}</li>
                       <li>{{ team_member.institution }}</li>
-                      {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
-                      {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
-                      {% if team_member.twitter and team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
-                      {% if team_member.github and team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
+                      {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" target="_blank" title="Website"></a></li>{% endfor %}
+                      {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" target="_blank" title="Bluesky"></a></li>{% endif %}
+                      {% if team_member.twitter and team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" target="_blank" title="X"></a></li>{% endif %}
+                      {% if team_member.github and team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" target="_blank" title="GitHub"></a></li>{% endif %}
                     </ul>
                   </li>
                 {% endfor %}
