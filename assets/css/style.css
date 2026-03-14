@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: Archivo;
-    src: url(fonts/Archivo-Italic-Var.woff2);
+    src: url(../fonts/Archivo-Italic-Var.woff2);
     font-style: italic;
 }
 
 :root {
-    color-scheme: light;
+    color-scheme: light dark;
     scroll-behavior: smooth;
     font-size: clamp(16px, 2vw, 20px);
     --dark: #010000;

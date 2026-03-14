@@ -83,7 +83,7 @@
                         <li>{{ team_member.position }}</li>
                         <li>{{ team_member.institution }}</li>
                         {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
-                        {% if team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
+                        {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
                         {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
                         {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
                       </ul>
@@ -94,7 +94,7 @@
                         <li>{{ team_member.position }}</li>
                         <li>{{ team_member.institution }}</li>
                         {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
-                        {% if team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
+                        {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
                         {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
                         {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
                       </ul>
@@ -109,7 +109,7 @@
                       <li>{{ team_member.position }}</li>
                       <li>{{ team_member.institution }}</li>
                       {% for weblink in weblinks %}<li class="buttons website"><a href="{{ weblink }}" title="Website"></a></li>{% endfor %}
-                      {% if team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
+                      {% if team_member.bluesky and team_member.bluesky != "" %}<li class="buttons bluesky"><a href="{{ team_member.bluesky }}" title="Bluesky"></a></li>{% endif %}
                       {% if team_member.twitter != "" %}<li class="buttons twitter"><a href="https://www.twitter.com/{{ team_member.twitter }}" title="X"></a></li>{% endif %}
                       {% if team_member.github != "" %}<li class="buttons github"><a href="https://www.github.com/{{ team_member.github }}" title="GitHub"></a></li>{% endif %}
                     </ul>
@@ -147,10 +147,10 @@
       </main>
       <footer>
         <ul>
-          <li class="sdu"><a href="https://www.sdu.dk" title="University of Southern Denmark"></a></li>
-          <li class="uio"><a href="https://www.uio.no" title="University of Oslo"></a></li>
-          <li class="uit"><a href="https://www.uit.no" title="UiT The Arctic University of Norway"></a></li>
-          <li class="tu"><a href="https://www.tu-dortmund.de" title="TU Dortmund University"></a></li>
+          <li class="sdu"><a href="https://www.sdu.dk" target="_blank" title="University of Southern Denmark">University of Southern Denmark</a></li>
+          <li class="uio"><a href="https://www.uio.no" target="_blank" title="University of Oslo">University of Oslo</a></li>
+          <li class="uit"><a href="https://www.uit.no" target="_blank" title="UiT The Arctic University of Norway">UiT The Arctic University of Norway</a></li>
+          <li class="tu"><a href="https://www.tu-dortmund.de" target="_blank" title="TU Dortmund University">TU Dortmund University</a></li>
         </ul>
         <a href="#top" class="back-to-top" title="Back to top"></a>
     </footer>
