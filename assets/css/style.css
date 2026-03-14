@@ -578,7 +578,7 @@ div.grid {
 ul:is(.bio, .boxes) {
     padding: 0px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(14rem, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
     justify-content: space-between;
     align-content: flex-start;
@@ -591,8 +591,12 @@ ul:is(.bio, .boxes) {
         margin-top: 1rem;
     }
 
-    &:has(> li:nth-child(2)) {
-        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    @media (min-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+
+        &:has(> li:nth-child(2)) {
+            grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        }
     }
 }
 
