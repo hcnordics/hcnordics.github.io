@@ -235,6 +235,7 @@ footer {
                 mask-repeat: no-repeat;
                 height: 2rem;
                 width: 6rem;
+                text-decoration: none;
 
                 &:hover {
                     color: light-dark(var(--dark), var(--light));
@@ -260,6 +261,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
 
         &:hover {
             color: var(--primary);
