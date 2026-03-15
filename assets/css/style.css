@@ -15,15 +15,16 @@
     color-scheme: light dark;
     scroll-behavior: smooth;
     font-size: clamp(16px, 2vw, 20px);
-    --dark: #010000;
-    --light: #F0EFF4;
-    --primary: #4361EE;
-    --secondary: light-dark(#291528, #BCD3F2);
-    --tertiary: light-dark(#212bb8, #c5aac3);
-    --muted: #676263; /*oklch(from #3A3E3B 50% c h);*/
-    --alert: #ffc43d;
-    --black: #000000;
-    --white: #FFFFFF;
+    --dark: oklch(5% 0.05 295);
+    --light: oklch(95% 0.05 295);
+    --primary: oklch(55% 0.25 265);
+    --secondary: light-dark(oklch(25% 0.1 325), oklch(75% 0.05 325));
+    --tertiary: light-dark(oklch(35% 0.2 265), oklch(65% 0.15 265));
+    --muted: oklch(50% 0.05 295); /*oklch(from #3A3E3B 50% c h);*/
+    --alert: oklch(85% 0.17 90);
+    --black: oklch(0% 0 0);
+    --white: oklch(100% 0 0);
+    --transparent: oklch(0% 0 0 / 0);
     --font-size--tiny: max(0.8rem, 10px);
     --font-size--small: max(0.9rem, 12px);
     --font-size--normal: 1rem;
@@ -188,7 +189,7 @@ header {
         font-size: var(--font-size--large);
         font-weight: 300;
         font-variation-settings: 'wdth' 125;
-        color: var(--secondary);
+        color: var(--dark);
     }
 
     >ul {
@@ -339,7 +340,7 @@ main {
             line-height: var(--font--line-height--tight);
             margin: 0rem;
             align-self: start;
-            color: var(--secondary);
+            color: var(--dark);
             max-width: 10em;
         }
 
@@ -366,8 +367,8 @@ main {
 
             > a {
                 text-decoration: none;
-                color: light-dark(var(--light), var(--dark));
-                background: var(--secondary);
+                color: var(--white);
+                background: var(--dark);
 
                 &:hover, &:focus {
                     background: var(--white);
@@ -377,7 +378,7 @@ main {
                 }
             }
             > span {
-                color: var(--secondary);
+                color: var(--dark);
                 border: var(--border-width) solid;
             }
         }
@@ -536,7 +537,7 @@ div.grid {
             }
 
             &:not(:hover, :focus) {
-                text-decoration-color: #00000000;
+                text-decoration-color: var(--transparent);
                 text-underline-offset: 1rem;
             }
             &:hover, &:focus {
@@ -641,7 +642,7 @@ ul.boxes {
             gap: 1rem;
             margin: 0px;
             padding: calc(1rem - var(--border-width));
-            background: #00000000;
+            background: var(--transparent);
             color: var(--secondary);
             border: var(--border-width) solid var(--secondary);
             border-radius: var(--border-curve);
