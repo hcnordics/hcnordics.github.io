@@ -15,13 +15,13 @@
     color-scheme: light dark;
     scroll-behavior: smooth;
     font-size: clamp(16px, 2vw, 20px);
-    --dark: oklch(5% 0.05 295);
-    --light: oklch(95% 0.05 295);
-    --primary: oklch(55% 0.25 265);
-    --secondary: light-dark(oklch(25% 0.1 325), oklch(75% 0.05 325));
-    --tertiary: light-dark(oklch(35% 0.2 265), oklch(65% 0.15 265));
-    --muted: oklch(50% 0.05 295); /*oklch(from #3A3E3B 50% c h);*/
-    --alert: oklch(85% 0.17 90);
+    --dark: oklch(5% 0.05 305);
+    --light: oklch(95% 0.05 305);
+    --primary: oklch(55% 0.25 275);
+    --secondary: light-dark(oklch(25% 0.1 335), oklch(85% 0.1 335));
+    --tertiary: light-dark(oklch(35% 0.17 275), oklch(75% 0.17 275));
+    --muted: oklch(50% 0.05 305); /*oklch(from #3A3E3B 50% c h);*/
+    --alert: oklch(85% 0.17 95);
     --black: oklch(0% 0 0);
     --white: oklch(100% 0 0);
     --transparent: oklch(0% 0 0 / 0);
