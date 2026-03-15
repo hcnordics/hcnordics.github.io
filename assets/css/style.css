@@ -543,8 +543,8 @@ div.grid {
                 text-underline-offset: 1rem;
             }
             &:hover, &:focus {
-                color: var(--primary);
-                text-decoration-color: var(--muted);
+                color: light-dark(var(--dark), var(--light));
+                text-decoration-color: var(--secondary);
             }
         }
     }
@@ -568,10 +568,10 @@ div.grid {
 
             > a {
                 font-weight: 500;
-                color: light-dark(var(--dark), var(--light));
+                color: light-dark(var(--black), var(--white));
 
                 &:hover, &:focus {
-                    color: light-dark(var(--black), var(--white));
+                    color: light-dark(var(--dark), var(--light));
                 }
             }
         }
