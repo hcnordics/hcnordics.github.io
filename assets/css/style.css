@@ -169,7 +169,7 @@ footer {
 
         &:hover {
             color: var(--light);
-            text-decoration-color: var(--secondary);
+            text-decoration-color: var(--tertiary);
             text-decoration-thickness: 0.15rem;
         }
     }
