@@ -16,7 +16,7 @@
     scroll-behavior: smooth;
     font-size: clamp(16px, 2vw, 20px);
     --dark: oklch(10% 0.05 305);
-    --light: oklch(90% 0.05 305);
+    --light: oklch(90% 0.03 305);
     --primary: oklch(55% 0.25 275);
     --secondary: light-dark(oklch(25% 0.1 335), oklch(85% 0.1 335));
     --tertiary: light-dark(oklch(35% 0.17 275), oklch(75% 0.17 275));
@@ -672,7 +672,6 @@ ul.boxes {
                 line-height: 1;
                 grid-area: label;
                 align-self: center;
-                justify-self: end;
             }
 
             &::before {
