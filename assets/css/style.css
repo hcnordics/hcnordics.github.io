@@ -784,7 +784,7 @@ ul.bio {
 
                         &:hover,
                         &:focus {
-                            background: light-dark(var(--primary), var(--white));
+                            background: var(--primary);
                         }
                     }
                 }
