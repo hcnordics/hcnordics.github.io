@@ -690,8 +690,9 @@ ul.boxes {
 
             &:hover,
             &:focus {
-                background: var(--secondary);
-                color: light-dark(var(--light), var(--dark));
+                background: var(--primary);
+                border-color: var(--primary);
+                color: var(--white);
 
                 &::after {
                     font-variation-settings: 'wdth' 125;
@@ -712,6 +713,7 @@ ul.boxes {
             &:hover {
                 background: var(--primary);
                 border-color: var(--primary);
+                color: var(--white);
             }
         }
     }
