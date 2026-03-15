@@ -824,7 +824,7 @@ ul.projects {
         content: "Related";
         display: block;
         font-variation-settings: 'wdth' 75;
-        color: var(--tertiary);
+        color: var(--muted);
     }
 
     >li {
@@ -843,9 +843,9 @@ ul.projects {
             &:hover, &:focus {
                 font-variation-settings: 'wdth' 125;
                 font-weight: 300;
-                background: var(--secondary);
-                color: light-dark(var(--light), var(--dark));
-                border-color: var(--secondary);
+                background: var(--primary);
+                color: var(--white);
+                border-color: var(--primary);
             }
         }
     }
