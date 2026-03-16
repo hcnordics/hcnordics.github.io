@@ -1,7 +1,7 @@
 ---
 title: "About HCNC"
 layout: directory
-cover: jessensskole.png
+#cover: jessensskole.png
 members: ""
 ---
 
