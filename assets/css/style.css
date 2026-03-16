@@ -21,7 +21,7 @@
     --secondary: light-dark(oklch(25% 0.1 335), oklch(85% 0.1 335));
     --tertiary: light-dark(oklch(35% 0.17 275), oklch(75% 0.17 275));
     --muted: light-dark(oklch(45% 0.05 305), oklch(55% 0.05 305));
-    --alert: oklch(85% 0.17 95);
+    --alert: oklch(55% 0.25 35);
     --black: oklch(0% 0 0);
     --white: oklch(100% 0 0);
     --transparent: oklch(0% 0 0 / 0);
