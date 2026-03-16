@@ -813,6 +813,9 @@ ul.bio {
         grid-column: 3;
         margin-top: 0px;
     }
+    :is(ul, ol):is(.bio, .boxes):is(.sidebar) {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Navigation */
