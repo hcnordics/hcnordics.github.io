@@ -661,6 +661,9 @@ ul.boxes {
             >span {
                 grid-area: title;
             }
+            >p {
+                grid-area: text;
+            }
 
             &::after,
             &::before {
