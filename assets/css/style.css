@@ -795,7 +795,7 @@ ul.bio {
                             background: var(--primary);
 
                             &::before {
-                                mask-size: 1.2rem;
+                                mask-size: 1.1rem;
                             }
                         }
                     }
