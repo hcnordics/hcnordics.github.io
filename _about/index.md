@@ -14,8 +14,4 @@ Among other things, our analysis considers:
 - on the demand side, what motivated employers’ choice of formally trained graduates rather than ‘raw’ labour that could be trained on the job? What did the increase in skilled labour mean for productivity at the firm- or industry-level?
 
 
-## More information
-
-<!-- ## Team
-
-The following people are members of our research team:-->
+<!-- ## More information -->
