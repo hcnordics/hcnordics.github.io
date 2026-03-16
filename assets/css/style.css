@@ -613,7 +613,6 @@ ul.boxes>li>a>span {
     display: block;
     font-variation-settings: 'wdth' 75;
     font-size: var(--font-size--medium);
-    color: light-dark(var(--white), var(--black));
     font-weight: 500;
     line-height: 1;
 }
@@ -647,9 +646,9 @@ ul.boxes {
             gap: 1rem;
             margin: 0px;
             padding: calc(1rem - var(--border-width));
-            background: var(--transparent);
             color: var(--secondary);
-            border: var(--border-width) solid var(--secondary);
+            background: light-dark(var(--white), var(--black));
+            border: var(--border-width) solid oklch(from currentColor l c h / 0.1);
             border-radius: var(--border-curve);
             text-decoration: none;
             font-size: var(--font-size--small);
@@ -707,6 +706,7 @@ ul.boxes {
         &.completed>a {
             background: var(--secondary);
             color: light-dark(var(--light), var(--dark));
+            border-color: var(--secondary);
 
             &::after {
                 content: "Completed";
@@ -738,6 +738,7 @@ ul.bio {
             margin: -1rem -1rem 1rem -1rem;
             padding: 1rem;
             border-bottom: var(--border-width) solid rgba(from currentColor r g b / 0.25);
+            color: light-dark(var(--white), var(--black));
         }
 
         >ul {
@@ -840,9 +841,10 @@ ul.projects {
 
         >a {
             color: var(--secondary);
+            background: light-dark(var(--white), var(--black));
+            border: var(--border-width) solid oklch(from currentColor l c h / 0.1);
             text-decoration: none;
             padding: 0.5rem 1rem;
-            border: var(--border-width) solid;
             border-radius: max(1rem, 1lh);
             font-variation-settings: 'wdth' 75;
             font-weight: 700;
