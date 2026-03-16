@@ -809,9 +809,9 @@ ul.bio {
 }
 
 @media (min-width: 800px) {
-    :is(.sidebar) {
-        grid-column: 2;
-        margin-top: 0px;
+    *:is(.sidebar) {
+        grid-column: 2 !important;
+        margin-top: 0px !important;
     }
 }
 
