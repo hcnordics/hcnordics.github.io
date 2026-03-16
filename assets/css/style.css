@@ -648,7 +648,7 @@ ul.boxes {
             padding: calc(1rem - var(--border-width));
             color: var(--secondary);
             background: light-dark(var(--white), var(--black));
-            border: var(--border-width) solid oklch(from currentColor l c h / 0.1);
+            border: var(--border-width) solid oklch(from currentColor l c h / 0.25);
             border-radius: var(--border-curve);
             text-decoration: none;
             font-size: var(--font-size--small);
@@ -842,7 +842,7 @@ ul.projects {
         >a {
             color: var(--secondary);
             background: light-dark(var(--white), var(--black));
-            border: var(--border-width) solid oklch(from currentColor l c h / 0.1);
+            border: var(--border-width) solid oklch(from currentColor l c h / 0.25);
             text-decoration: none;
             padding: 0.5rem 1rem;
             border-radius: max(1rem, 1lh);
