@@ -819,6 +819,11 @@ ul.bio {
     :is(ul, ol):is(.bio, .boxes):is(.sidebar) {
         grid-template-columns: 1fr;
     }
+    :is(ul, ol):is(.boxes):is(.sidebar) {
+        > li > a::before {
+            display: none !important;
+        }
+    }
 }
 
 /* Navigation */
