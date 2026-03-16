@@ -75,7 +75,7 @@ a {
         font-variation-settings: 'wdth' 75;
         background: var(--secondary);
         color: light-dark(var(--light), var(--dark));
-        padding: 0.5rem 1rem;
+        padding: 0.75rem 1rem;
         border-radius: max(1rem, 1lh);
         display: inline-flex;
         flex-flow: row;
@@ -372,6 +372,7 @@ main {
                 text-decoration: none;
                 color: var(--white);
                 background: var(--dark);
+                font-weight: 600;
 
                 &:hover, &:focus {
                     background: var(--white);
@@ -612,6 +613,7 @@ ul.boxes>li>a>span {
     display: block;
     font-variation-settings: 'wdth' 75;
     font-size: var(--font-size--medium);
+    color: light-dark(var(--white), var(--black));
     font-weight: 500;
     line-height: 1;
 }
@@ -784,11 +786,16 @@ ul.bio {
                             mask-size: 1rem;
                             mask-position: center;
                             mask-repeat: no-repeat;
+                            transition: inherit;
                         }
 
                         &:hover,
                         &:focus {
                             background: var(--primary);
+
+                            &::before {
+                                mask-size: 1.2rem;
+                            }
                         }
                     }
                 }
