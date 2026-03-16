@@ -65,9 +65,12 @@ a {
     text-decoration-thickness: min(0.15em, 0.15rem);
     text-underline-offset: min(0.15em, 0.15rem);
 
-    &:hover {
+    &:hover, &:focus {
         text-decoration-color: currentColor;
         text-underline-offset: min(0.15em, 0.15rem) !important;
+    }
+    &:active {
+        opacity: 0.75;
     }
 
     &.cta {
@@ -83,7 +86,7 @@ a {
         text-decoration: none;
         line-height: var(--font--line-height--tight);
 
-        &:hover {
+        &:hover, &:focus {
             background: var(--primary);
             color: var(--white);
             font-variation-settings: 'wdth' 125;
@@ -168,7 +171,7 @@ footer {
         text-underline-offset: 1rem;
         color: inherit;
 
-        &:hover {
+        &:hover, &:focus {
             color: var(--light);
             text-decoration-color: var(--tertiary);
             text-decoration-thickness: 0.15rem;
@@ -238,7 +241,7 @@ footer {
                 width: 6rem;
                 text-decoration: none;
 
-                &:hover {
+                &:hover, &:focus {
                     color: light-dark(var(--dark), var(--light));
                 }
             }
@@ -264,7 +267,7 @@ footer {
         justify-content: center;
         text-decoration: none;
 
-        &:hover {
+        &:hover, &:focus {
             color: var(--primary);
         }
 
@@ -712,7 +715,7 @@ ul.boxes {
                 content: "Completed";
             }
 
-            &:hover {
+            &:hover, &:focus {
                 background: var(--primary);
                 border-color: var(--primary);
                 color: var(--white);
